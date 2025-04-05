@@ -24,5 +24,6 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" FontSize="45"></TextBlock>
+        <TextBlock Text="Test Window" Grid.Row="2" Grid.Column="1" FontSize="45"></TextBlock>
     </Grid>
 </Window>
