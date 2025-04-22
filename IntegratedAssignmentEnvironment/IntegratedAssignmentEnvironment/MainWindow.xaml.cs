@@ -24,5 +24,30 @@ namespace IntegratedAssignmentEnvironment
         {
             InitializeComponent();
         }
+
+        private void SearchBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+        }
+
+        private void ConfigurationSearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ProjectSearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void AddConfigurationButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
