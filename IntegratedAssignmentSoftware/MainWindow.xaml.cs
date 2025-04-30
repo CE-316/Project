@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,16 @@ namespace IntegratedAssignmentSoftware
         public MainWindow()
         {
             InitializeComponent();
+            LoadConfigFiles();
+        }
+
+        private void LoadConfigFiles()
+        {
+            var configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
+            if (!Directory.Exists(configDir))
+                Directory.CreateDirectory(configDir);
+            var configFiles = Directory.GetFiles(configDir, "*.json").ToList();
+            ConfigurationListBox.ItemsSource = configFiles;
         }
 
         private void ProjectSearchBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -37,6 +48,14 @@ namespace IntegratedAssignmentSoftware
         }
 
         private void ConfigurationSearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        private void EditConfigButton_Click(Object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void DeleteConfigButton_Click(Object sender, RoutedEventArgs e)
         {
 
         }

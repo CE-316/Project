@@ -24,7 +24,7 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" TextAlignment="Center" Padding="10,25,10,25"></TextBlock>
-        <TextBlock Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30"  Padding="10,25,10,25"></TextBlock>
+        <TextBlock Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30"  Padding="10,25,10,25" HorizontalAlignment="Center"></TextBlock>
         <TextBox x:Name="ConfigurationSearchBox"
              Grid.Row="3"
              Grid.Column="1"
@@ -56,5 +56,26 @@
     Width="160"
     Height="40"
     ></Button>
+        <ListBox x:Name="ConfigurationListBox" Grid.Row="4" Grid.Column="1" Height="100">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="0,2">
+                        <!-- Show just the file name -->
+                        <TextBlock Text="{Binding Name}"
+                                   VerticalAlignment="Center"
+                                   Width="200"/>
+                        <!-- Edit button launches the file in default editor -->
+                        <Button Content="Edit"
+                                Click="EditConfigButton_Click"
+                                Tag="{Binding}"/>
+                        <!-- Delete button removes it from disk + UI -->
+                        <Button Content="Delete"
+                                Click="DeleteConfigButton_Click"
+                                Tag="{Binding}"
+                                Margin="5,0,0,0"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
