@@ -11,19 +11,19 @@ namespace IntegratedAssignmentSoftware
 {
     public class ProjectModel
     {
-        [JsonPropertyName("id")]
-        public string Id { get; set; }
-
         [JsonPropertyName("name")]
         public string Name { get; set; }
 
         [JsonPropertyName("description")]
         public string Description { get; set; }
 
-        [JsonPropertyName("language")]
-        public string Language { get; set; }
+        [JsonPropertyName("configuration")]
+        public string Configuration { get; set; }
 
         [JsonPropertyName("submissionsDirectory")]
         public string SubmissionsDirectory { get; set; }
+
+        [JsonPropertyName("testCases")]
+        public List<TestCaseModel> TestCases { get; set; } = new List<TestCaseModel>();
     }
 }

@@ -42,3 +42,21 @@ C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\ne
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Projects\test_project.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware_Content.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\AddConfigurationWindow.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\AddProjectWindow.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\EditConfigurationWindow.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\EditProjectWindow.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\AddConfigurationWindow.baml
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\AddProjectWindow.baml
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\EditConfigurationWindow.baml
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\EditProjectWindow.baml
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (2).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (3).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (4).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (5).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (6).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (7).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (8).json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopyala.json
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\ProjectWindow.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\ProjectWindow.baml

@@ -21,15 +21,30 @@ namespace IntegratedAssignmentSoftware
         {
             InitializeComponent();
             LoadConfigFiles();
+            LoadProjectFiles();
         }
 
         private void LoadConfigFiles()
         {
-            var configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
+            string configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
             if (!Directory.Exists(configDir))
                 Directory.CreateDirectory(configDir);
-            var configFiles = Directory.GetFiles(configDir, "*.json").ToList();
+
+            var dir = new DirectoryInfo(configDir);
+
+            var configFiles = dir.GetFiles("*.json").ToList();
             ConfigurationListBox.ItemsSource = configFiles;
+        }
+        private void LoadProjectFiles()
+        {
+            string projectDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Projects");
+            if (!Directory.Exists(projectDir))
+                Directory.CreateDirectory(projectDir);
+
+            var dir = new DirectoryInfo(projectDir);
+
+            var projectFiles = dir.GetFiles("*.json").ToList();
+            ProjectListBox.ItemsSource = projectFiles;
         }
 
         private void ProjectSearchBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -39,12 +54,14 @@ namespace IntegratedAssignmentSoftware
 
         private void AddConfigurationButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var addConfigurationWindow = new AddConfigurationWindow();
+            addConfigurationWindow.ShowDialog();
         }
 
         private void AddProjectButton_Click(object sender, RoutedEventArgs e)
         {
-
+            var addProjectWindow = new AddProjectWindow();
+            addProjectWindow.ShowDialog();
         }
 
         private void ConfigurationSearchBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -56,6 +73,18 @@ namespace IntegratedAssignmentSoftware
 
         }
         private void DeleteConfigButton_Click(Object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OpenProjectButton_Click(Object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void EditProjectButton_Click(Object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void DeleteProjectButton_Click(Object sender, RoutedEventArgs e)
         {
 
         }
