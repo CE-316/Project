@@ -23,5 +23,10 @@ namespace IntegratedAssignmentSoftware
         {
             InitializeComponent();
         }
+
+        private void AddProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

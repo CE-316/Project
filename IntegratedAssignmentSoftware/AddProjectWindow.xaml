@@ -24,6 +24,7 @@
             Margin="10"
             ></TextBlock>
         <TextBox
+            x:Name="NameTextBox"
             Grid.Row="2"
             Margin="10"
             ></TextBox>
@@ -34,12 +35,15 @@
             Margin="10"
             ></TextBlock>
         <RichTextBox
+            x:Name="DescriptionTextBox"
             Grid.Row="4"
             Margin="10"
             VerticalScrollBarVisibility="Auto"
             Height="200"
             ></RichTextBox>
         <Button
+            x:Name="AddProjectButton"
+            Click="AddProjectButton_Click"
             Content="Add Project"
             HorizontalAlignment="Center"
             Padding="10"

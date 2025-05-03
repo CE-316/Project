@@ -115,7 +115,8 @@ namespace IntegratedAssignmentSoftware
         }
         private void EditConfigButton_Click(Object sender, RoutedEventArgs e)
         {
-
+            var editConfigurationWindow = new EditConfigurationWindow();
+            editConfigurationWindow.ShowDialog();
         }
         private void DeleteConfigButton_Click(Object sender, RoutedEventArgs e)
         {
@@ -123,11 +124,12 @@ namespace IntegratedAssignmentSoftware
         }
         private void OpenProjectButton_Click(Object sender, RoutedEventArgs e)
         {
-
+            
         }
         private void EditProjectButton_Click(Object sender, RoutedEventArgs e)
         {
-
+            var editProjectWindow = new EditProjectWindow();
+            editProjectWindow.ShowDialog();
         }
         private void DeleteProjectButton_Click(Object sender, RoutedEventArgs e)
         {

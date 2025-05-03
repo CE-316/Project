@@ -23,5 +23,24 @@ namespace IntegratedAssignmentSoftware
         {
             InitializeComponent();
         }
+
+        private void SaveProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EditTestCaseButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void DeleteTestCaseButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddTestCaseButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

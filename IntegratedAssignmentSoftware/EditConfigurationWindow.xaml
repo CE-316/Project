@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="EditConfigurationWindow" Height="450" Width="800">
+        Title="EditConfigurationWindow" Height="400" Width="350">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock
+        Text="Language/Configuration Name:"
+        Grid.Row="1"
+        HorizontalAlignment="Center"
+        Margin="10"
+        ></TextBlock>
+        <TextBox
+        x:Name="LanguageTextBox"
+        Grid.Row="2"
+        Margin="10"
+        ></TextBox>
+        <TextBlock 
+        Text="Compile Command With Arguments:"
+        Grid.Row="3"
+        HorizontalAlignment="Center"
+         Margin="10"
+    ></TextBlock>
+        <TextBox
+        x:Name="CompileTextBox"
+        Grid.Row="4"
+        Margin="10"
+    ></TextBox>
+        <TextBlock 
+        Text="Run Command With Arguments:"
+        Grid.Row="5"
+        HorizontalAlignment="Center"
+         Margin="10"
+    ></TextBlock>
+        <TextBox
+        x:Name="RunTextBox"
+        Grid.Row="6"
+        Margin="10"
+    ></TextBox>
+        <Button
+        x:Name="SaveConfigurationButton"
+        Click="SaveConfigurationButton_Click"
+        Content="Save Configuration Changes"
+        Grid.Row="7"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Padding="10"
+        ></Button>
     </Grid>
 </Window>

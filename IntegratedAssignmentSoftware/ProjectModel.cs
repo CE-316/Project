@@ -18,7 +18,7 @@ namespace IntegratedAssignmentSoftware
         public string Description { get; set; }
 
         [JsonPropertyName("configuration")]
-        public string Configuration { get; set; }
+        public ConfigModel Configuration { get; set; }
 
         [JsonPropertyName("submissionsDirectory")]
         public string SubmissionsDirectory { get; set; }
