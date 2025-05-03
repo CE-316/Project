@@ -1,4 +1,5 @@
 ﻿using IntegratedAssignmentSoftware.Services;
+using System.ComponentModel;
 using System.IO;
 using System.Text;
 using System.Windows;
@@ -25,8 +26,9 @@ namespace IntegratedAssignmentSoftware
             LoadConfigFiles();
             LoadProjectFiles();
         }
-        
 
+        private ICollectionView configListView;
+        private ICollectionView projectListView;
         private void LoadConfigFiles()
         {
             string configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
@@ -36,7 +38,9 @@ namespace IntegratedAssignmentSoftware
             var dir = new DirectoryInfo(configDir);
 
             var configFiles = dir.GetFiles("*.json").ToList();
-            ConfigurationListBox.ItemsSource = configFiles;
+
+            configListView = CollectionViewSource.GetDefaultView(configFiles);
+            ConfigurationListBox.ItemsSource = configListView;
         }
         private void LoadProjectFiles()
         {
@@ -47,12 +51,27 @@ namespace IntegratedAssignmentSoftware
             var dir = new DirectoryInfo(projectDir);
 
             var projectFiles = dir.GetFiles("*.json").ToList();
-            ProjectListBox.ItemsSource = projectFiles;
+            
+            projectListView = CollectionViewSource.GetDefaultView(projectFiles);
+            ProjectListBox.ItemsSource = projectListView;
         }
 
         private void ProjectSearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            var term = ProjectSearchBox.Text.Trim().ToLowerInvariant();
+            if (string.IsNullOrEmpty(term))
+            {
+                projectListView.Filter = null;
+            }
+            else
+            {
+                projectListView.Filter = o =>
+                {
+                    var fi = o as FileInfo;
+                    return fi?.Name.ToLowerInvariant().Contains(term) == true;
+                };
+            }
+            projectListView.Refresh();
         }
 
         private void AddConfigurationButton_Click(object sender, RoutedEventArgs e)
@@ -79,7 +98,20 @@ namespace IntegratedAssignmentSoftware
 
         private void ConfigurationSearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            var term = ConfigurationSearchBox.Text.Trim().ToLowerInvariant();
+            if (string.IsNullOrEmpty(term))
+            {
+                configListView.Filter = null;
+            }
+            else
+            {
+                configListView.Filter = o =>
+                {
+                    var fi = o as FileInfo;
+                    return fi?.Name.ToLowerInvariant().Contains(term) == true;
+                };
+            }
+            configListView.Refresh();
         }
         private void EditConfigButton_Click(Object sender, RoutedEventArgs e)
         {
