@@ -1,10 +1,12 @@
-﻿using System.IO;
+﻿using IntegratedAssignmentSoftware.Services;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -23,6 +25,7 @@ namespace IntegratedAssignmentSoftware
             LoadConfigFiles();
             LoadProjectFiles();
         }
+        
 
         private void LoadConfigFiles()
         {
@@ -63,6 +66,16 @@ namespace IntegratedAssignmentSoftware
             var addProjectWindow = new AddProjectWindow();
             addProjectWindow.ShowDialog();
         }
+
+        // test için sadece
+        //
+        private void TestProjectWindow(object sender, RoutedEventArgs e)
+        {
+            var projectWindow = new ProjectWindow();
+            projectWindow.ShowDialog();
+        }
+        //
+        //
 
         private void ConfigurationSearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {

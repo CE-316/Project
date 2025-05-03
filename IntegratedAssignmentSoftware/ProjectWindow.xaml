@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="ProjectWindow" Height="1080" Width="1920">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Button Content="Test Compile Java" Click="TestCompileJava_Click" Margin="5" Height="220"/>
+            <Button Content="Test Run Python" Click="TestRunPython_Click" Margin="5" Height="220"/>
+        </StackPanel>
+
+
     </Grid>
 </Window>
