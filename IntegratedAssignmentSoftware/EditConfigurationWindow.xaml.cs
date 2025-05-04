@@ -24,9 +24,45 @@ namespace IntegratedAssignmentSoftware
             InitializeComponent();
         }
 
-        private void SaveConfigurationButton_Click(object sender, RoutedEventArgs e)
-        {
+        
+    
+    private void SaveConfigurationButton_Click(object sender, RoutedEventArgs e)
+    
+{
+    string language = LanguageTextBox.Text.Trim();
+    string compileCommand = CompileTextBox.Text.Trim();
+    string runCommand = RunTextBox.Text.Trim();
 
-        }
+    if (string.IsNullOrEmpty(language))
+    {
+        MessageBox.Show("Language/configuration name cannot be empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+        return;
+    }
+
+    var updatedConfig = new ConfigModel
+    {
+        Language = language,
+        Compile = compileCommand,
+        Run = runCommand
+    };
+
+    string configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
+    if (!Directory.Exists(configDir))
+        Directory.CreateDirectory(configDir);
+
+    string configFilePath = System.IO.Path.Combine(configDir, $"{language}.json");
+
+    try
+    {
+        JsonLoader.SaveToFile(updatedConfig, configFilePath);
+        MessageBox.Show("The configuration was updated successfully.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+        this.Close();
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"An error occurred while saving the configuration: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+}
+
     }
 }
