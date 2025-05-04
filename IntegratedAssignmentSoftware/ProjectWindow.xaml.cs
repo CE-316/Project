@@ -77,7 +77,8 @@ namespace IntegratedAssignmentSoftware
 
             if (success)
             {
-                string output = CompilerService.RunJava(workingDirectory,className);
+                string javaArgs = "hello dunya";
+                string output = CompilerService.RunJava(workingDirectory, className, javaArgs);
                 MessageBox.Show("Java Output:\n" + output);
             }
             else
@@ -89,33 +90,39 @@ namespace IntegratedAssignmentSoftware
         private void TestRunPython_Click(object sender, RoutedEventArgs e)
         {
             string pythonPath = "python"; //path
-            string scriptPath = "C:\\Users\\msı\\OneDrive\\Masaüstü\\test.py"; //random python file
+            string scriptPath = SelectFile("select file to be compiled", "Python Files (*.py)|*.py", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
 
-            string output = CompilerService.RunPython(pythonPath, scriptPath);
+            string pythonArgs = "merhabadunya";
+
+            string output = CompilerService.RunPython(pythonPath, scriptPath, pythonArgs);
             MessageBox.Show("Python Output:\n" + output);
         }
         //c++
         /* 
          * <Button Content="Test Compile C++" Click="TestCompileCpp_Click" Margin="5" Height="220"/>
         private void TestCompileCpp_Click(object sender, RoutedEventArgs e)
-        {
-            string cppSource = "C:\\Users\\msı\\OneDrive\\Masaüstü\\main.cpp";
-            string exeOutput = "C:\\Users\\msı\\OneDrive\\Masaüstü\\main.exe";
-            string gppPath = "g++"; // path
+{
+    string cppSource = SelectFile("Select C++ Source File", "C++ Files (*.cpp)|*.cpp", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+    if (cppSource == null) { MessageBox.Show("No file selected."); return; }
 
-            bool success = CompilerService.CompileCpp(cppSource, exeOutput, gppPath, out string errors);
+    string exeOutput = System.IO.Path.ChangeExtension(cppSource, ".exe");
+    string gppPath = "g++"; // or full path to g++
 
-            if (success)
-            {
-                string output = CompilerService.RunCpp(exeOutput);
-                MessageBox.Show("C++ Output:\n" + output);
-            }
-            else
-            {
-                MessageBox.Show("C++ Compilation Failed:\n" + errors);
-            }
-        }
+    bool success = CompilerService.CompileCpp(cppSource, exeOutput, gppPath, out string errors);
+
+    if (success)
+    {
+        string cppArgs = Microsoft.VisualBasic.Interaction.InputBox("Enter arguments for C++ executable:", "C++ Arguments");
+        string output = CompilerService.RunCpp(exeOutput, cppArgs);
+        MessageBox.Show("C++ Output:\n" + output);
+    }
+    else
+    {
+        MessageBox.Show("C++ Compilation Failed:\n" + errors);
+    }
+}
+
         */
         //
-    }
+    } 
 }

@@ -25,45 +25,52 @@ namespace IntegratedAssignmentSoftware.Services
             return string.IsNullOrWhiteSpace(errors);
         }
 
-        public static string RunJava(string classFolder, string mainClass)
+        public static string RunJava(string workingDirectory, string className, string arguments = "")
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo
+            ProcessStartInfo psi = new ProcessStartInfo
             {
                 FileName = "java",
-                Arguments = $"-cp \"{classFolder}\" {mainClass}",
+                Arguments = $"{className} {arguments}",
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 UseShellExecute = false,
-                CreateNoWindow = true
+                CreateNoWindow = true,
+                WorkingDirectory = workingDirectory
             };
 
-            using Process process = Process.Start(startInfo);
-            string output = process.StandardOutput.ReadToEnd();
-            string error = process.StandardError.ReadToEnd();
-            process.WaitForExit();
-
-            return string.IsNullOrWhiteSpace(error) ? output : $"[Error]\n{error}";
-        }
-
-        public static string RunPython(string pythonExePath, string scriptPath)
-        {
-            ProcessStartInfo startInfo = new ProcessStartInfo
+            using (Process process = Process.Start(psi))
             {
-                FileName = pythonExePath, // e.g., "python" or full path
-                Arguments = $"\"{scriptPath}\"",
+                string output = process.StandardOutput.ReadToEnd();
+                string errors = process.StandardError.ReadToEnd();
+                process.WaitForExit();
+
+                return string.IsNullOrWhiteSpace(errors) ? output : errors;
+            }
+        }
+
+
+        public static string RunPython(string pythonPath, string scriptPath, string arguments = "")
+        {
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = pythonPath,
+                Arguments = $"\"{scriptPath}\" {arguments}",
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 UseShellExecute = false,
                 CreateNoWindow = true
             };
 
-            using Process process = Process.Start(startInfo);
-            string output = process.StandardOutput.ReadToEnd();
-            string error = process.StandardError.ReadToEnd();
-            process.WaitForExit();
+            using (Process process = Process.Start(psi))
+            {
+                string output = process.StandardOutput.ReadToEnd();
+                string errors = process.StandardError.ReadToEnd();
+                process.WaitForExit();
 
-            return string.IsNullOrWhiteSpace(error) ? output : $"[Error]\n{error}";
+                return string.IsNullOrWhiteSpace(errors) ? output : errors;
+            }
         }
+
 
         public static bool CompileCpp(string sourcePath, string outputExePath, string gppPath, out string errors)
         {
@@ -83,23 +90,27 @@ namespace IntegratedAssignmentSoftware.Services
             return string.IsNullOrWhiteSpace(errors);
         }
 
-        public static string RunCpp(string exePath)
+        public static string RunCpp(string exePath, string arguments = "")
         {
-            ProcessStartInfo startInfo = new ProcessStartInfo
+            ProcessStartInfo psi = new ProcessStartInfo
             {
                 FileName = exePath,
+                Arguments = arguments,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
                 UseShellExecute = false,
                 CreateNoWindow = true
             };
 
-            using Process process = Process.Start(startInfo);
-            string output = process.StandardOutput.ReadToEnd();
-            string error = process.StandardError.ReadToEnd();
-            process.WaitForExit();
+            using (Process process = Process.Start(psi))
+            {
+                string output = process.StandardOutput.ReadToEnd();
+                string errors = process.StandardError.ReadToEnd();
+                process.WaitForExit();
 
-            return string.IsNullOrWhiteSpace(error) ? output : $"[Error]\n{error}";
+                return string.IsNullOrWhiteSpace(errors) ? output : errors;
+            }
         }
+
     }
 }
