@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/java.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopya%20(2).json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopya%20(3).json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopya%20(4).json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopya%20(5).json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopya%20(6).json")]

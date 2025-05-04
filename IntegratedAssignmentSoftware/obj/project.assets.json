@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msı\\OneDrive\\Masaüstü\\CE316Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+      "projectUniqueName": "C:\\Users\\msı\\OneDrive\\Masaüstü\\CE316z\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
       "projectName": "IntegratedAssignmentSoftware",
-      "projectPath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\CE316Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+      "projectPath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\CE316z\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
       "packagesPath": "C:\\Users\\msı\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\CE316Project\\IntegratedAssignmentSoftware\\obj\\",
+      "outputPath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\CE316z\\IntegratedAssignmentSoftware\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

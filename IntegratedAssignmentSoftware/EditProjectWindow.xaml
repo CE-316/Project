@@ -112,6 +112,7 @@
         Grid.Column="1"
         Grid.ColumnSpan="3"
         x:Name="SaveProjectButton"
+        Click="SaveProjectButton_Click"
         Content="Save Project Changes"
         HorizontalAlignment="Center"
         Padding="10"

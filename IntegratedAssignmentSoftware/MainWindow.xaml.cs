@@ -146,10 +146,19 @@ namespace IntegratedAssignmentSoftware
 
         private void EditProjectButton_Click(object sender, RoutedEventArgs e)
         {
-            var editProjWin = new EditProjectWindow();
+            var selectedProj = ProjectListBox.SelectedItem as FileInfo;
+            if (selectedProj == null)
+            {
+                MessageBox.Show("Please select a project to edit.", "No Project Selected",
+                                MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+
+            var editProjWin = new EditProjectWindow(selectedProj.FullName); 
             editProjWin.ShowDialog();
             LoadProjectFiles();
         }
+
 
         private void DeleteProjectButton_Click(object sender, RoutedEventArgs e)
         {
