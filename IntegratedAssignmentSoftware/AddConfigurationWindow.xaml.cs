@@ -32,7 +32,8 @@ namespace IntegratedAssignmentSoftware
                 Run = runCommand
             };
 
-            string configDir = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "Configurations");
+            string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
+
             if (!Directory.Exists(configDir))
                 Directory.CreateDirectory(configDir);
 
