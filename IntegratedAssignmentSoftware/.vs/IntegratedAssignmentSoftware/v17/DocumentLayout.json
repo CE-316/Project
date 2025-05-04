@@ -1,73 +1,76 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\",
+  "WorkspaceRootPath": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\addconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\addprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\addconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\addprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\addconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\addconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316p\\integratedassignmentsoftware\\testcasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\ms\u0131\\onedrive\\masa\u00FCst\u00FC\\ce316project\\integratedassignmentsoftware\\testcasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:testcasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -78,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,88 +89,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompilerService.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
-              "RelativeDocumentMoniker": "Services\\CompilerService.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
-              "RelativeToolTip": "Services\\CompilerService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T05:44:27.857Z",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAOYUAAAAAAAAAAAWwPMUAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-04T19:21:34.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ProjectWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "ProjectWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
               "RelativeToolTip": "ProjectWindow.xaml.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAwE0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T21:14:17.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EditProjectWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
-              "RelativeDocumentMoniker": "EditProjectWindow.xaml",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
-              "RelativeToolTip": "EditProjectWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T20:08:01.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddConfigurationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AddConfigurationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
-              "RelativeToolTip": "AddConfigurationWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T06:23:51.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditProjectWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EditProjectWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml.cs",
-              "RelativeToolTip": "EditProjectWindow.xaml.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwCwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T08:09:40.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EditConfigurationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EditConfigurationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
-              "RelativeToolTip": "EditConfigurationWindow.xaml.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowC4AAAAYAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAkwJQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T07:53:34.086Z",
+              "WhenOpened": "2025-04-30T21:08:24.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "JsonLoader.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\JsonLoader.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\JsonLoader.cs",
               "RelativeDocumentMoniker": "JsonLoader.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\JsonLoader.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\JsonLoader.cs",
               "RelativeToolTip": "JsonLoader.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -176,47 +141,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectModel.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ProjectModel.cs",
-              "RelativeDocumentMoniker": "ProjectModel.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ProjectModel.cs",
-              "RelativeToolTip": "ProjectModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:25:57.217Z",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-30T21:08:26.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "ProjectWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ProjectWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml",
               "RelativeDocumentMoniker": "ProjectWindow.xaml",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ProjectWindow.xaml",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml",
               "RelativeToolTip": "ProjectWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T21:11:15.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAG4AAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:08:24.993Z"
+              "WhenOpened": "2025-05-01T21:11:15.883Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "EditConfigurationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EditConfigurationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
+              "RelativeToolTip": "EditConfigurationWindow.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T07:53:34.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditProjectWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EditProjectWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml.cs",
+              "RelativeToolTip": "EditProjectWindow.xaml.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwCwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T08:09:40.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddConfigurationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AddConfigurationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
+              "RelativeToolTip": "AddConfigurationWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T06:23:51.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditProjectWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
+              "RelativeDocumentMoniker": "EditProjectWindow.xaml",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
+              "RelativeToolTip": "EditProjectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T20:08:01.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompilerService.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
+              "RelativeDocumentMoniker": "Services\\CompilerService.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
+              "RelativeToolTip": "Services\\CompilerService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T05:44:27.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectModel.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
+              "RelativeDocumentMoniker": "ProjectModel.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
+              "RelativeToolTip": "ProjectModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T21:25:57.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AddProjectWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddProjectWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
               "RelativeToolTip": "AddProjectWindow.xaml.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAtwDYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,56 +248,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-30T21:08:26.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AddConfigurationWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml",
               "RelativeDocumentMoniker": "AddConfigurationWindow.xaml",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml",
               "RelativeToolTip": "AddConfigurationWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-01T20:06:58.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "AddProjectWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
               "RelativeDocumentMoniker": "AddProjectWindow.xaml",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
               "RelativeToolTip": "AddProjectWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-01T20:07:26.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EditConfigurationWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
               "RelativeDocumentMoniker": "EditConfigurationWindow.xaml",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
               "RelativeToolTip": "EditConfigurationWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T20:08:26.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:08:26.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TestCaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\TestCaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\TestCaseModel.cs",
               "RelativeDocumentMoniker": "TestCaseModel.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\TestCaseModel.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\TestCaseModel.cs",
               "RelativeToolTip": "TestCaseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -281,11 +293,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ConfigModel.cs",
-              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ConfigModel.cs",
+              "DocumentMoniker": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ConfigModel.cs",
               "RelativeDocumentMoniker": "ConfigModel.cs",
-              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316p\\IntegratedAssignmentSoftware\\ConfigModel.cs",
+              "ToolTip": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\CE316Project\\IntegratedAssignmentSoftware\\ConfigModel.cs",
               "RelativeToolTip": "ConfigModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
