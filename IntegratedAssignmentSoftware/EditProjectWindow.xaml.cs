@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,11 +24,26 @@ namespace IntegratedAssignmentSoftware
         public EditProjectWindow()
         {
             InitializeComponent();
+            LoadConfigFiles();
         }
-
-        private void SaveProjectButton_Click(object sender, RoutedEventArgs e)
+        public void SaveProjectButton_Click()
         {
 
+        }
+
+        private ICollectionView configListView;
+        private void LoadConfigFiles()
+        {
+            string configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
+            if (!Directory.Exists(configDir))
+                Directory.CreateDirectory(configDir);
+
+            var dir = new DirectoryInfo(configDir);
+
+            var configFiles = dir.GetFiles("*.json").ToList();
+
+            configListView = CollectionViewSource.GetDefaultView(configFiles);
+            ConfigurationListBox.ItemsSource = configListView;
         }
 
         private void EditTestCaseButton_Click(object sender, RoutedEventArgs e)

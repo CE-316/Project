@@ -63,11 +63,10 @@
         <ListBox VerticalAlignment="Top" Grid.RowSpan="2" Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,10,0" x:Name="ConfigurationListBox" Grid.Row="6" Height="200" Width="450">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Margin="0,2">
-                        <TextBlock Text="{Binding Name}"
-                           VerticalAlignment="Center"
-                           Width="200"/>
-                    </StackPanel>
+                    <TextBlock Text="{Binding Name}"
+           VerticalAlignment="Center"
+           Width="350"
+           Padding="5"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
@@ -113,7 +112,6 @@
         Grid.Column="1"
         Grid.ColumnSpan="3"
         x:Name="SaveProjectButton"
-        Click="SaveProjectButton_Click"
         Content="Save Project Changes"
         HorizontalAlignment="Center"
         Padding="10"
