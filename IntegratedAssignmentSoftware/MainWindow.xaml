@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="MainWindow" Height="600" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -34,36 +34,35 @@
              FontSize="20"
              Width="350"
              TextChanged="ConfigurationSearchBox_TextChanged"/>
-        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,10">
+        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal"
+            HorizontalAlignment="Left" Margin="0,10,0,10">
             <Button x:Name="AddConfigurationButton"
-                Click="AddConfigurationButton_Click"
-                Content="Add Configuration +"
-                FontSize="15"
-                Width="160"
-                Height="40"/>
+            Click="AddConfigurationButton_Click"
+            Content="Add Configuration +"
+            FontSize="15" Width="160" Height="40"/>
+            <Button x:Name="EditSelectedConfigurationButton"
+            Click="EditConfigButton_Click"
+            Content="Edit Selected Configuration"
+            FontSize="15" Width="200" Height="40"
+            Margin="10,0,0,0"/>
             <Button x:Name="DeleteSelectedConfigurationButton"
-                Click="DeleteConfigButton_Click"
-                Content="Delete Selected Configuration"
-                FontSize="15"
-                Width="200"
-                Height="40"
-                Margin="10,0,0,0"/>
+            Click="DeleteConfigButton_Click"
+            Content="Delete Selected Configuration"
+            FontSize="15" Width="200" Height="40"
+            Margin="10,0,0,0"/>
         </StackPanel>
-        <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible"
-             Margin="0,10,0,10"
-             x:Name="ConfigurationListBox"
-             Grid.Row="4"
-             Grid.Column="1"
-             Height="200"
-             Width="350">
+
+        <ListBox x:Name="ConfigurationListBox"
+         Grid.Row="4" Grid.Column="1"
+         Height="200" Width="350"
+         Margin="0,10,0,10"
+         ScrollViewer.VerticalScrollBarVisibility="Visible">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Margin="0,2">
-                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Width="200"/>
-                        <Button Content="Edit"
-                            Click="EditConfigButton_Click"
-                            Tag="{Binding}"/>
-                    </StackPanel>
+                    <TextBlock Text="{Binding Name}"
+                       VerticalAlignment="Center"
+                       Width="350"
+                       Padding="5"/>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>

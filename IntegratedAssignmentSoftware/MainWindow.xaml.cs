@@ -22,7 +22,7 @@ namespace IntegratedAssignmentSoftware
 
         private void LoadConfigFiles()
         {
-            string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
+            string configDir = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName, "Configurations");
             if (!Directory.Exists(configDir))
                 Directory.CreateDirectory(configDir);
 
@@ -80,9 +80,12 @@ namespace IntegratedAssignmentSoftware
 
         private void EditConfigButton_Click(object sender, RoutedEventArgs e)
         {
-            var editWin = new EditConfigurationWindow();
-            editWin.ShowDialog();
-            LoadConfigFiles();
+            var selectedConfig = ConfigurationListBox.SelectedItem as FileInfo;
+            bool? result = EditConfigurationWindow.LaunchFor(selectedConfig);
+            if (result == true)
+            {
+                LoadConfigFiles();
+            }
         }
 
         private void DeleteConfigButton_Click(object sender, RoutedEventArgs e)
