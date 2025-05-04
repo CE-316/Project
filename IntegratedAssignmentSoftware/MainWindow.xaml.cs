@@ -120,8 +120,36 @@ namespace IntegratedAssignmentSoftware
         }
         private void DeleteConfigButton_Click(Object sender, RoutedEventArgs e)
         {
+            
+            var selectedConfig = ConfigurationListBox.SelectedItem as FileInfo;
 
+            if (selectedConfig != null)
+            {
+               
+                    try
+                    {
+                        //delete
+                        File.Delete(selectedConfig.FullName);
+
+                        //reload list afterr deletion
+                        LoadConfigFiles();
+
+                        MessageBox.Show("File deleted", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                       
+                        MessageBox.Show($"error while deleting: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                
+            }
+            else
+            {
+                // If no item is selected, notify the user
+                MessageBox.Show("Please select a configuration file to delete.", "No File Selected", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
+
         private void OpenProjectButton_Click(Object sender, RoutedEventArgs e)
         {
             

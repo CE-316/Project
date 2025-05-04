@@ -32,17 +32,52 @@ namespace IntegratedAssignmentSoftware
             this.Name = projectName;
             InitializeComponent();
         }
+        private string SelectFile(string title, string filter, string initialDirectory = "")
+        {
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog
+            {
+                Title = title,
+                Filter = filter,
+                InitialDirectory = string.IsNullOrWhiteSpace(initialDirectory)
+                                    ? Environment.GetFolderPath(Environment.SpecialFolder.MyComputer)
+                                    : initialDirectory
+            };
+
+            bool? result = openFileDialog.ShowDialog();
+            return result == true ? openFileDialog.FileName : null;
+        }
+
         //java
         private void TestCompileJava_Click(object sender, RoutedEventArgs e)
         {
-            string javaFilePath = "C:\\Users\\msı\\OneDrive\\Masaüstü\\hellow.java"; //random java file
-            string javacPath = "C:\\Program Files\\Java\\jdk-19\\bin\\javac.exe"; //path, 
+            string javacPath = SelectFile("Select javac.exe", "Java Compiler (javac.exe)|javac.exe", @"C:\Program Files\Java");
+            if (javacPath != null)
+            {
+                MessageBox.Show("Selected path: " + javacPath);
+            }
+            else
+            {
+                MessageBox.Show("No file selected.");
+            }
+
+            string javaFilePath = SelectFile("select file to be compiled", "Java Files (*.java)|*.java", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            if (javaFilePath != null)
+            {
+                MessageBox.Show("Selected path: " + javaFilePath);
+            }
+            else
+            {
+                MessageBox.Show("No file selected.");
+            }
+
+            string className = System.IO.Path.GetFileNameWithoutExtension(javaFilePath);
+            string workingDirectory = System.IO.Path.GetDirectoryName(javaFilePath);
 
             bool success = CompilerService.CompileJava(javaFilePath, javacPath, out string errors);
 
             if (success)
             {
-                string output = CompilerService.RunJava("C:\\Users\\msı\\OneDrive\\Masaüstü", "hellow");
+                string output = CompilerService.RunJava(workingDirectory,className);
                 MessageBox.Show("Java Output:\n" + output);
             }
             else
