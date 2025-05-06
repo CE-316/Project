@@ -39,10 +39,25 @@ namespace IntegratedAssignmentSoftware
             if (!Directory.Exists(projectDir))
                 Directory.CreateDirectory(projectDir);
 
-            var projectFiles = new DirectoryInfo(projectDir)
-                               .GetFiles("*.json").ToList();
+            var projectFiles = new DirectoryInfo(projectDir).GetFiles("*.json");
 
-            projectListView = CollectionViewSource.GetDefaultView(projectFiles);
+            var projectModels = projectFiles
+                .Select(fi =>
+                {
+                    try
+                    {
+                        return JsonLoader.LoadFromFile<ProjectModel>(fi.FullName);
+                    }
+                    catch
+                    {
+                        // optionally log the failure or skip bad files silently
+                        return null;
+                    }
+                })
+                .Where(p => p != null)
+                .ToList();
+
+            projectListView = CollectionViewSource.GetDefaultView(projectModels);
             ProjectListBox.ItemsSource = projectListView;
         }
 
@@ -113,73 +128,27 @@ namespace IntegratedAssignmentSoftware
 
         private void OpenProjectButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedProj = ProjectListBox.SelectedItem as FileInfo;
-            if (selectedProj == null)
+            if (sender is Button button && button.Tag is ProjectModel project)
             {
-                MessageBox.Show("Please select a project to open.", "No Project Selected",
-                                MessageBoxButton.OK, MessageBoxImage.Information);
-                return;
-            }
-            try
-            {
-            string chosen = "Java";
-            if (chosen.Equals("Java"))
-            {
-                TestRunJava_Click();
-            }
-            if (chosen.Equals("Python"))
-            {
-                TestRunPython_Click();
-            }
-            if (chosen.Equals("C++"))
-            {
-
-            }
-        }
-    
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to open project: {ex.Message}", "Error",
-                                MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Opening project: {project.Name}");
             }
         }
 
         private void EditProjectButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedProj = ProjectListBox.SelectedItem as FileInfo;
-            if (selectedProj == null)
+            if (sender is Button button && button.Tag is ProjectModel project)
             {
-                MessageBox.Show("Please select a project to edit.", "No Project Selected",
-                                MessageBoxButton.OK, MessageBoxImage.Information);
-                return;
+                EditProjectWindow editProjectWindow = new EditProjectWindow(project);
+                editProjectWindow.ShowDialog();
             }
-
-            var editProjWin = new EditProjectWindow(selectedProj.FullName); 
-            editProjWin.ShowDialog();
-            LoadProjectFiles();
         }
 
 
         private void DeleteProjectButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedProj = ProjectListBox.SelectedItem as FileInfo;
-            if (selectedProj == null)
+            if (sender is Button button && button.Tag is ProjectModel project)
             {
-                MessageBox.Show("Please select a project to delete.", "No Project Selected",
-                                MessageBoxButton.OK, MessageBoxImage.Information);
-                return;
-            }
-            try
-            {
-                File.Delete(selectedProj.FullName);
-                LoadProjectFiles();
-                MessageBox.Show("Project deleted successfully.", "Success",
-                                MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error deleting project: {ex.Message}", "Error",
-                                MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Deleting project: {project.Name}");
             }
         }
         private void TestRunJava_Click()

@@ -22,59 +22,62 @@ namespace IntegratedAssignmentSoftware
     /// </summary>
     public partial class EditProjectWindow : Window
     {
-        private readonly string _originalFilePath;
-        private ConfigModel _config;
+        public ProjectModel Project { get; }
+        private string projectsDir;
+        private string fileName;
+        private string fullPath;
+        private string originalPath;
 
-
-        public EditProjectWindow(string filePath)
+        public EditProjectWindow(ProjectModel project)
         {
             InitializeComponent();
-            _originalFilePath = filePath;
+
+            projectsDir = Path.Combine(AppContext.BaseDirectory, "Projects");
+            Directory.CreateDirectory(projectsDir);
+
+            originalPath = Path.Combine(projectsDir, $"{project.Name}.json");
+
+            Project = project;
+            NameTextBox.Text = project.Name;
+            SetRichText(DescriptionTextBox, project.Description);
+            TestCaseListBox.ItemsSource = project.TestCases;
             LoadConfigFiles();
         }
+
+        string GetRichText(RichTextBox rtb)
+        {
+            TextRange textRange = new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd);
+            return textRange.Text;
+        }
+
+        void SetRichText(RichTextBox rtb, string rtfText)
+        {
+            var range = new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd);
+            using var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(rtfText));
+            range.Load(stream, DataFormats.Text);
+        }
+
         public void SaveProjectButton_Click(object sender, RoutedEventArgs e)
         {
+            Project.Name = NameTextBox.Text;
+            Project.Description = GetRichText(DescriptionTextBox);
 
-        string newProjectName = NameTextBox.Text.Trim();
+            fileName = $"{Project.Name}.json";
+            fullPath = Path.Combine(projectsDir, fileName);
 
+            JsonLoader.SaveToFile(Project, fullPath);
 
-            TextRange textRange = new TextRange(DescriptionTextBox.Document.ContentStart, DescriptionTextBox.Document.ContentEnd);
-            string newProjectDescription = textRange.Text.Trim();
-
-            if (string.IsNullOrEmpty(newProjectName))
+            if (!string.Equals(originalPath, fullPath, StringComparison.OrdinalIgnoreCase) && File.Exists(originalPath))
             {
-                MessageBox.Show("Proje adı boş olamaz.", "Hata", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
-            string configFolder = Path.GetDirectoryName(_originalFilePath);
-            string newFileName = Path.Combine(configFolder, newProjectName + ".json");
-            var newProject = new ProjectModel
-            {
-                Name = newProjectName,
-                Description = newProjectDescription,
-                SubmissionsDirectory = string.Empty,
-                Configuration = null,
-                TestCases = new List<TestCaseModel>()
-            };
-
-
-            try
-            {
-                JsonLoader.SaveToFile(newProject, newFileName);
-
-                if (!string.Equals(_originalFilePath, newFileName, StringComparison.OrdinalIgnoreCase))
+                try
                 {
-                    File.Delete(_originalFilePath);
+                    File.Delete(originalPath);
                 }
-
-                MessageBox.Show("Project updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                DialogResult = true;
-                Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred while saving the project: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Warning: could not delete old file:\n{ex.Message}",
+                                    "Cleanup Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
             }
         }
 
@@ -106,6 +109,14 @@ namespace IntegratedAssignmentSoftware
         private void AddTestCaseButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void TestCaseListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (TestCaseListBox.SelectedItem is TestCaseModel selectedTest)
+            {
+                TestCasePreviewTextBlock.Text = selectedTest.Name + "\n Input: " + selectedTest.Input + "\n Output: " + selectedTest.Output;
+            }
         }
     }
 }

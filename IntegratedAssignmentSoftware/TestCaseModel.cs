@@ -11,14 +11,14 @@ namespace IntegratedAssignmentSoftware
 {
     public class TestCaseModel
     {
-        [JsonPropertyName("id")]
-        public string Id { get; set; }
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
 
-        [JsonPropertyName("inputFile")]
-        public string InputFile { get; set; }
+        [JsonPropertyName("input")]
+        public string Input { get; set; }
 
-        [JsonPropertyName("outputFile")]
-        public string OutputFile { get; set; }
+        [JsonPropertyName("output")]
+        public string Output { get; set; }
 
         [JsonPropertyName("points")]
         public int Points { get; set; }

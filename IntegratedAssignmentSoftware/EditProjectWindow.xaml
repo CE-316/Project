@@ -71,7 +71,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <TextBlock Margin="10" Text="Test Cases" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="2"></TextBlock>
-        <ListBox VerticalAlignment="Top" Grid.RowSpan="2" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,10,0" x:Name="TestCaseListBox" Grid.Row="6" Height="200" Width="450">
+        <ListBox SelectionChanged="TestCaseListBox_SelectionChanged" VerticalAlignment="Top" Grid.RowSpan="2" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,10,0" x:Name="TestCaseListBox" Grid.Row="6" Height="200" Width="450">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,2">
