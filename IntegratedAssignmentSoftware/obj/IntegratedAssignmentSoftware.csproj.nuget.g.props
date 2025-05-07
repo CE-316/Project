@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\ASUS\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgExtended_Wpf_Toolkit Condition=" '$(PkgExtended_Wpf_Toolkit)' == '' ">C:\Users\ASUS\.nuget\packages\extended.wpf.toolkit\4.7.25104.5739</PkgExtended_Wpf_Toolkit>
+  </PropertyGroup>
 </Project>

@@ -126,14 +126,15 @@ namespace IntegratedAssignmentSoftware
 
         private void AddTestCaseButton_Click(object sender, RoutedEventArgs e)
         {
-
+            AddTestCaseWindow addTestCaseWindow = new AddTestCaseWindow(Project);
+            addTestCaseWindow.ShowDialog();
         }
 
         private void TestCaseListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (TestCaseListBox.SelectedItem is TestCaseModel selectedTest)
             {
-                TestCasePreviewTextBlock.Text = selectedTest.Name + "\n Input: " + selectedTest.Input + "\n Output: " + selectedTest.Output;
+                TestCasePreviewTextBlock.Text = selectedTest.Name + "\n Input: " + selectedTest.Input + "\n Output: " + selectedTest.Output + "\n Points: " + selectedTest.Points;
             }
         }
     }

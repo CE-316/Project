@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WİNDOWS7_0_OR_GREATER
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\App.xaml
-6331003129
+7635850063
 9-1517126219
-161244756963
-200-423684338
-AddConfigurationWindow.xaml;AddProjectWindow.xaml;EditConfigurationWindow.xaml;EditProjectWindow.xaml;MainWindow.xaml;ProjectWindow.xaml;
+17-1882935434
+205338532157
+AddConfigurationWindow.xaml;AddProjectWindow.xaml;AddTestCaseWindow.xaml;EditConfigurationWindow.xaml;EditProjectWindow.xaml;MainWindow.xaml;ProjectWindow.xaml;
 
 False
 
