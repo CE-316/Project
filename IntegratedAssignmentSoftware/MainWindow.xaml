@@ -59,7 +59,7 @@
          ScrollViewer.VerticalScrollBarVisibility="Visible">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}"
+                    <TextBlock Text="{Binding Language}"
                        VerticalAlignment="Center"
                        Width="350"
                        Padding="5"/>

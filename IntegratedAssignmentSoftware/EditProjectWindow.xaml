@@ -63,7 +63,7 @@
         <ListBox VerticalAlignment="Top" Grid.RowSpan="2" Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,10,0" x:Name="ConfigurationListBox" Grid.Row="6" Height="200" Width="450">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}"
+                    <TextBlock Text="{Binding Language}"
            VerticalAlignment="Center"
            Width="350"
            Padding="5"/>

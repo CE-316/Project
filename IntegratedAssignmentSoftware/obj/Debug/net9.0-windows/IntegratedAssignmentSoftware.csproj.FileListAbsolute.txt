@@ -237,7 +237,6 @@ C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\ne
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (8).json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopyala.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config.json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Projects\test_project.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\IntegratedAssignmentSoftware.exe
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\IntegratedAssignmentSoftware.deps.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\IntegratedAssignmentSoftware.runtimeconfig.json

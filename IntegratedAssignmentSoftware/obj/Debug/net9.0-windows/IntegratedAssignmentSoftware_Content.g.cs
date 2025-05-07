@@ -17,6 +17,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopya%20(8).json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config%20-%20kopyala.json")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("configurations/test_config.json")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("projects/test_project.json")]
 
 

@@ -13,29 +13,45 @@ namespace IntegratedAssignmentSoftware
     {
         private ICollectionView configListView;
         private ICollectionView projectListView;
+        private string projectDir;
+        private string configDir;
         public MainWindow()
         {
             InitializeComponent();
+            projectDir = Path.Combine(AppContext.BaseDirectory, "Projects");
+            configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
             LoadConfigFiles();
             LoadProjectFiles();
         }
 
         private void LoadConfigFiles()
         {
-            string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
             if (!Directory.Exists(configDir))
                 Directory.CreateDirectory(configDir);
 
-            var configFiles = new DirectoryInfo(configDir)
-                              .GetFiles("*.json").ToList();
+            var configFiles = new DirectoryInfo(configDir).GetFiles("*.json");
 
-            configListView = CollectionViewSource.GetDefaultView(configFiles);
+            var configModels = configFiles
+                .Select(fi =>
+                {
+                    try
+                    {
+                        return JsonLoader.LoadFromFile<ConfigModel>(fi.FullName);
+                    }
+                    catch
+                    {
+                        return null;
+                    }
+                })
+                .Where(p => p != null)
+                .ToList();
+
+            configListView = CollectionViewSource.GetDefaultView(configModels);
             ConfigurationListBox.ItemsSource = configListView;
         }
 
         private void LoadProjectFiles()
         {
-            string projectDir = Path.Combine(AppContext.BaseDirectory, "Projects");
             if (!Directory.Exists(projectDir))
                 Directory.CreateDirectory(projectDir);
 
@@ -50,7 +66,6 @@ namespace IntegratedAssignmentSoftware
                     }
                     catch
                     {
-                        // optionally log the failure or skip bad files silently
                         return null;
                     }
                 })
@@ -139,7 +154,12 @@ namespace IntegratedAssignmentSoftware
             if (sender is Button button && button.Tag is ProjectModel project)
             {
                 EditProjectWindow editProjectWindow = new EditProjectWindow(project);
-                editProjectWindow.ShowDialog();
+                bool? isSaved = editProjectWindow.ShowDialog();
+
+                if (isSaved == true)
+                {
+                    LoadProjectFiles();
+                }
             }
         }
 
@@ -148,8 +168,18 @@ namespace IntegratedAssignmentSoftware
         {
             if (sender is Button button && button.Tag is ProjectModel project)
             {
-                MessageBox.Show($"Deleting project: {project.Name}");
+                string deletePath = Path.Combine(projectDir, $"{project.Name}.json");
+                try
+                {
+                    File.Delete(deletePath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Warning: could not delete old file:\n{ex.Message}",
+                                    "Cleanup Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
             }
+            LoadProjectFiles();
         }
         private void TestRunJava_Click()
         {

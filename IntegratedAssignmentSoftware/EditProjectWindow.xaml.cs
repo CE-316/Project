@@ -61,6 +61,10 @@ namespace IntegratedAssignmentSoftware
         {
             Project.Name = NameTextBox.Text;
             Project.Description = GetRichText(DescriptionTextBox);
+            if (ConfigurationListBox.SelectedItem != null)
+            {
+                Project.Configuration = (ConfigModel)ConfigurationListBox.SelectedItem;
+            }
 
             fileName = $"{Project.Name}.json";
             fullPath = Path.Combine(projectsDir, fileName);
@@ -79,21 +83,35 @@ namespace IntegratedAssignmentSoftware
                                     "Cleanup Error", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
+            this.DialogResult = true;
         }
 
 
         private ICollectionView configListView;
         private void LoadConfigFiles()
         {
-            string configDir = System.IO.Path.Combine(AppContext.BaseDirectory, "Configurations");
+            string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
             if (!Directory.Exists(configDir))
                 Directory.CreateDirectory(configDir);
 
-            var dir = new DirectoryInfo(configDir);
+            var configFiles = new DirectoryInfo(configDir).GetFiles("*.json");
 
-            var configFiles = dir.GetFiles("*.json").ToList();
+            var configModels = configFiles
+                .Select(fi =>
+                {
+                    try
+                    {
+                        return JsonLoader.LoadFromFile<ConfigModel>(fi.FullName);
+                    }
+                    catch
+                    {
+                        return null;
+                    }
+                })
+                .Where(p => p != null)
+                .ToList();
 
-            configListView = CollectionViewSource.GetDefaultView(configFiles);
+            configListView = CollectionViewSource.GetDefaultView(configModels);
             ConfigurationListBox.ItemsSource = configListView;
         }
 

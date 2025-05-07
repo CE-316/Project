@@ -46,7 +46,7 @@ namespace IntegratedAssignmentSoftware
         Name = projectName,
         Description = projectDescription,
         SubmissionsDirectory = string.Empty, 
-        Configuration = null, 
+        Configuration = new ConfigModel(), 
         TestCases = new List<TestCaseModel>() 
     };
 
