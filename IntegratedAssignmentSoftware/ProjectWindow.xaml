@@ -5,10 +5,75 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="ProjectWindow" Height="1080" Width="1920">
-    <Grid>
-        <StackPanel Orientation="Vertical" Margin="10"/>
-
-
-    </Grid>
+        Title="Project Window" Height="1080" Width="1920">
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Content="New"/>
+                <Button Content="Open"/>
+                <Separator/>
+                <Button Content="Save"/>
+            </ToolBar>
+        </ToolBarTray>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="20"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" x:Name="NameTextBox" Text="Project Name"></TextBox>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3">
+                <Button HorizontalAlignment="Right" Padding="5,0" Margin="5" Content="Edit Configurations"></Button>
+                <Button HorizontalAlignment="Right" Padding="5,0" Margin="5" Content="Choose configuration"></Button>
+                <Button HorizontalAlignment="Right" Padding="5,0" Margin="5" Content="Run"></Button>
+            </StackPanel>
+            <RichTextBox MinHeight="500" MinWidth="500" Margin="5" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="DescriptionTextBox"></RichTextBox>
+            <StackPanel Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
+                <StackPanel Orientation="Horizontal">
+                    <Button 
+                            x:Name="SelectFolder"
+                            HorizontalAlignment="Left"
+                            Content="Select Submissions Folder..."
+                            Click="SelectFolder_Click"
+                            Width="180"/>
+                    <Button
+                            x:Name="SaveResults"
+                            Margin="10,0"
+                            HorizontalAlignment="Left"
+                            Click="SaveResults_Click"
+                            Width="120" 
+                            Content="Save results to..."></Button>
+                </StackPanel>
+                
+                <ListBox Height="370" x:Name="SubmissionsList"
+                         Margin="0,5,0,0">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="2">
+                                <Ellipse Width="12" Height="12"
+                                         Fill="{Binding DotBrush}"
+                                         Margin="0,0,8,0"/>
+                                <TextBlock Text="{Binding Name}"
+                                           VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            <StackPanel Margin="5" Background="Green" Grid.Row="4" Grid.Column="3">
+            </StackPanel>
+            <StackPanel Margin="5" Grid.Row="2" Grid.RowSpan="2" Grid.Column="3" Background="Red"></StackPanel>
+        </Grid>
+    </DockPanel>
 </Window>

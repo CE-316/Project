@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\App.xaml
 7635850063
 9-1517126219
-17-1882935434
+18-454861001
 205338532157
 AddConfigurationWindow.xaml;AddProjectWindow.xaml;AddTestCaseWindow.xaml;EditConfigurationWindow.xaml;EditProjectWindow.xaml;MainWindow.xaml;ProjectWindow.xaml;
 
-False
+True
 

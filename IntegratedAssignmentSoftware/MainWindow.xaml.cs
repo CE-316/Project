@@ -145,7 +145,9 @@ namespace IntegratedAssignmentSoftware
         {
             if (sender is Button button && button.Tag is ProjectModel project)
             {
-                MessageBox.Show($"Opening project: {project.Name}");
+                ProjectWindow projectWindow = new ProjectWindow(project);
+                projectWindow.Show();
+                this.Close();
             }
         }
 
