@@ -32,22 +32,28 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="20"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" x:Name="NameTextBox" Text="Project Name"></TextBox>
+            <TextBox VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" x:Name="NameTextBox" Text="Project Name"></TextBox>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3">
-                <Button HorizontalAlignment="Right" Padding="5,0" Margin="5" Content="Edit Configurations"></Button>
-                <Button HorizontalAlignment="Right" Padding="5,0" Margin="5" Content="Choose configuration"></Button>
-                <Button HorizontalAlignment="Right" Padding="5,0" Margin="5" Content="Run"></Button>
+                <TextBlock HorizontalAlignment="Right" Padding="5" Margin="5" Text="Choose configuration:"></TextBlock>
+                <ComboBox x:Name="ConfigurationComboBox"
+                          Width="250"
+                          Margin="5"
+                          DisplayMemberPath="Language"
+                          SelectionChanged="ConfigurationComboBox_SelectionChanged"/>
+                <Button HorizontalAlignment="Right" Padding="5" Margin="5" Content="Run"></Button>
             </StackPanel>
             <RichTextBox MinHeight="500" MinWidth="500" Margin="5" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="DescriptionTextBox"></RichTextBox>
             <StackPanel Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
                 <StackPanel Orientation="Horizontal">
                     <Button 
+                            Padding="5"
                             x:Name="SelectFolder"
                             HorizontalAlignment="Left"
                             Content="Select Submissions Folder..."
                             Click="SelectFolder_Click"
                             Width="180"/>
                     <Button
+                            Padding="5"
                             x:Name="SaveResults"
                             Margin="10,0"
                             HorizontalAlignment="Left"

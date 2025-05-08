@@ -24,12 +24,26 @@ namespace IntegratedAssignmentSoftware
     /// </summary>
     public partial class ProjectWindow : Window
     {
+        private ObservableCollection<ConfigModel> _configs = new ObservableCollection<ConfigModel>();
         public ObservableCollection<SubmissionViewModel> Submissions { get; } = new ObservableCollection<SubmissionViewModel>();
         private ProjectModel Project { get; set; }
         public ProjectWindow(ProjectModel project)
         {
             this.Project = project;
             InitializeComponent();
+
+            ConfigurationComboBox.ItemsSource = _configs;
+            LoadConfigurations();
+            if (Project.Configuration == null)
+            {
+                Project.Configuration = new ConfigModel { Language = null };
+            }
+            if (Project.Configuration.Language != null)
+            {
+                var match = _configs.FirstOrDefault(c => c.Language == Project.Configuration.Language);
+                if (match != null)
+                    ConfigurationComboBox.SelectedItem = match;
+            }
             SubmissionsList.ItemsSource = Submissions;
         }
 
@@ -41,6 +55,7 @@ namespace IntegratedAssignmentSoftware
                 return;
             var selectedPath = dlg.FolderName;
             LoadSubmissions(selectedPath);
+            Project.SubmissionsDirectory = selectedPath;
         }
         private void LoadSubmissions(string rootFolder)
         {
@@ -69,6 +84,33 @@ namespace IntegratedAssignmentSoftware
         private void SaveResults_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ConfigurationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ConfigurationComboBox.SelectedItem is ConfigModel selected)
+            {
+                Project.Configuration = selected;
+            }
+        }
+        private void LoadConfigurations()
+        {
+            string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
+            Directory.CreateDirectory(configDir);
+
+            _configs.Clear();
+            foreach (var fi in new DirectoryInfo(configDir).GetFiles("*.json"))
+            {
+                try
+                {
+                    var cfg = JsonLoader.LoadFromFile<ConfigModel>(fi.FullName);
+                    _configs.Add(cfg);
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"Failed to load {fi.Name}: {ex.Message}");
+                }
+            }
         }
     } 
 }
