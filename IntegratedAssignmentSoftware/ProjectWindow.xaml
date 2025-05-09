@@ -12,7 +12,7 @@
                 <Button Content="New"/>
                 <Button Content="Open"/>
                 <Separator/>
-                <Button Content="Save"/>
+                <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save"/>
             </ToolBar>
         </ToolBarTray>
         <Grid>

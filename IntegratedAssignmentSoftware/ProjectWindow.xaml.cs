@@ -24,13 +24,20 @@ namespace IntegratedAssignmentSoftware
     /// </summary>
     public partial class ProjectWindow : Window
     {
+        private string fileName;
+        private string fullPath;
+        private string projectsDir;
+        private string originalPath;
         private ObservableCollection<ConfigModel> _configs = new ObservableCollection<ConfigModel>();
         public ObservableCollection<SubmissionViewModel> Submissions { get; } = new ObservableCollection<SubmissionViewModel>();
         private ProjectModel Project { get; set; }
         public ProjectWindow(ProjectModel project)
         {
-            this.Project = project;
+            Project = project;
             InitializeComponent();
+            projectsDir = Path.Combine(AppContext.BaseDirectory, "Projects");
+            Directory.CreateDirectory(projectsDir);
+            originalPath = Path.Combine(projectsDir, $"{project.Name}.json");
 
             ConfigurationComboBox.ItemsSource = _configs;
             LoadConfigurations();
@@ -83,7 +90,12 @@ namespace IntegratedAssignmentSoftware
 
         private void SaveResults_Click(object sender, RoutedEventArgs e)
         {
-
+            
+        }
+        string GetRichText(RichTextBox rtb)
+        {
+            TextRange textRange = new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd);
+            return textRange.Text;
         }
 
         private void ConfigurationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -111,6 +123,36 @@ namespace IntegratedAssignmentSoftware
                     Console.Error.WriteLine($"Failed to load {fi.Name}: {ex.Message}");
                 }
             }
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(NameTextBox.Text) || string.IsNullOrWhiteSpace(GetRichText(DescriptionTextBox)))
+            {
+                MessageBox.Show("Make sure the project has a name and description.");
+                return;
+            }
+            Project.Name = NameTextBox.Text;
+            Project.Description = GetRichText(DescriptionTextBox);
+
+            fileName = $"{Project.Name}.json";
+            fullPath = Path.Combine(projectsDir, fileName);
+
+            JsonLoader.SaveToFile(Project, fullPath);
+
+            if (!string.Equals(originalPath, fullPath, StringComparison.OrdinalIgnoreCase) && File.Exists(originalPath))
+            {
+                try
+                {
+                    File.Delete(originalPath);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Warning: could not delete old file:\n{ex.Message}",
+                                    "Cleanup Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+            MessageBox.Show("Project saved successfully.");
         }
     } 
 }
