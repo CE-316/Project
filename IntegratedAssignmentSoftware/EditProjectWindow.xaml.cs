@@ -117,17 +117,34 @@ namespace IntegratedAssignmentSoftware
 
         private void EditTestCaseButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (sender is Button button && button.Tag is TestCaseModel testCaseModel)
+            {
+                EditTestCaseWindow editTestCaseWindow = new EditTestCaseWindow(Project, testCaseModel);
+                if (editTestCaseWindow.ShowDialog() == true)
+                {
+                    TestCaseListBox.ItemsSource = Project.TestCases;
+                    TestCaseListBox.Items.Refresh();
+                }
+            }
         }
         private void DeleteTestCaseButton_Click(object sender, RoutedEventArgs e)
         {
-
+            if (sender is Button button && button.Tag is TestCaseModel testCaseModel)
+            {
+                Project.TestCases.Remove(testCaseModel);
+                TestCaseListBox.ItemsSource = Project.TestCases;
+                TestCaseListBox.Items.Refresh();
+            }
         }
 
         private void AddTestCaseButton_Click(object sender, RoutedEventArgs e)
         {
             AddTestCaseWindow addTestCaseWindow = new AddTestCaseWindow(Project);
-            addTestCaseWindow.ShowDialog();
+            if (addTestCaseWindow.ShowDialog() == true)
+            {
+                TestCaseListBox.ItemsSource = Project.TestCases;
+                TestCaseListBox.Items.Refresh();
+            }
         }
 
         private void TestCaseListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

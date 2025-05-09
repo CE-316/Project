@@ -290,3 +290,5 @@ C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\ne
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware.csproj.AssemblyReference.cache
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\Integrat.9303626F.Up2Date
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\EditTestCaseWindow.g.cs
+C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\EditTestCaseWindow.baml

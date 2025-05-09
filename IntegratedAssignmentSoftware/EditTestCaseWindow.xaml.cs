@@ -12,22 +12,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Media.TextFormatting;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 
 namespace IntegratedAssignmentSoftware
 {
     /// <summary>
-    /// AddTestCaseWindow.xaml etkileşim mantığı
+    /// EditTestCaseWindow.xaml etkileşim mantığı
     /// </summary>
-    public partial class AddTestCaseWindow : Window
+    public partial class EditTestCaseWindow : Window
     {
         private static readonly Regex _nonDigit = new Regex(@"\D");
         private ProjectModel _projectModel;
-        public AddTestCaseWindow(ProjectModel projectModel)
+        private TestCaseModel _testCaseModel;
+        public EditTestCaseWindow(ProjectModel projectModel, TestCaseModel testCaseModel)
         {
             _projectModel = projectModel;
+            _testCaseModel = testCaseModel;
             InitializeComponent();
         }
 
@@ -70,12 +71,10 @@ namespace IntegratedAssignmentSoftware
             int? nullableValue = PointsUpDown.Value;
             if (!string.IsNullOrEmpty(InputTextBox.Text) && !string.IsNullOrEmpty(OutputTextBox.Text) && !string.IsNullOrEmpty(TestCaseNameTextBox.Text) && nullableValue.HasValue)
             {
-                TestCaseModel testCaseModel = new TestCaseModel();
-                testCaseModel.Input = InputTextBox.Text;
-                testCaseModel.Output = OutputTextBox.Text;
-                testCaseModel.Points = nullableValue.Value;
-                testCaseModel.Name = TestCaseNameTextBox.Text;
-                _projectModel.TestCases.Add(testCaseModel);
+                _testCaseModel.Input = InputTextBox.Text;
+                _testCaseModel.Output = OutputTextBox.Text;
+                _testCaseModel.Points = nullableValue.Value;
+                _testCaseModel.Name = TestCaseNameTextBox.Text;
                 this.DialogResult = true;
             }
             else

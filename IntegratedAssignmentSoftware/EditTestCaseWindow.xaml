@@ -1,0 +1,50 @@
+﻿<Window x:Class="IntegratedAssignmentSoftware.EditTestCaseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="EditTestCaseWindow" Height="500" Width="375">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="10" Grid.Row="1" Grid.Column="1" Text="Type in the input or choose a txt file:"></TextBlock>
+        <Button x:Name="ChooseInputFileButton" Click="ChooseInputFileButton_Click" Margin="10" Content="Choose file" Grid.Row="1" Grid.Column="2"></Button>
+        <TextBox x:Name="InputTextBox" Margin="10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+        <TextBlock Margin="10" Text="Type in the output or choose a txt file:" Grid.Row="3" Grid.Column="1"></TextBlock>
+        <Button Name="ChooseOutputFileButton" Click="ChooseOutputFileButton_Click" Margin="10" Content="Choose file" Grid.Row="3" Grid.Column="2"></Button>
+        <TextBox x:Name="OutputTextBox" Margin="10" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+        <TextBlock Text="Test Case Name:" Margin="10" Grid.Row="5" Grid.Column="1"></TextBlock>
+        <TextBox x:Name="TestCaseNameTextBox" Margin="10" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+        <TextBlock Text="Points:" Margin="10" Grid.Row="7" Grid.Column="1"></TextBlock>
+        <Button x:Name="SaveTestCaseButton" Click="SaveTestCaseButton_Click" Margin="110, 10" Content="Save Test Case" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2"></Button>
+        <xctk:IntegerUpDown x:Name="PointsUpDown" Margin="10" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" Value="0"
+                Minimum="0"
+                Maximum="100"
+                Increment="1"
+                Width="100"
+                PreviewTextInput="PointsUpDown_PreviewTextInput"
+                DataObject.Pasting="PointsUpDown_Pasting"        
+                />
+    </Grid>
+</Window>

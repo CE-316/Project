@@ -35,6 +35,12 @@ namespace IntegratedAssignmentSoftware
         {
             Project = project;
             InitializeComponent();
+            NameTextBox.Text = project.Name;
+            SetRichText(DescriptionTextBox, project.Description);
+            if (!string.IsNullOrEmpty(project.SubmissionsDirectory))
+            {
+                LoadSubmissions(project.SubmissionsDirectory);
+            }
             projectsDir = Path.Combine(AppContext.BaseDirectory, "Projects");
             Directory.CreateDirectory(projectsDir);
             originalPath = Path.Combine(projectsDir, $"{project.Name}.json");
@@ -71,6 +77,7 @@ namespace IntegratedAssignmentSoftware
             var testCases = Project.TestCases;
             int totalTests = testCases.Count;
 
+            Directory.CreateDirectory(rootFolder);
             foreach (var dir in Directory.GetDirectories(rootFolder))
             {
                 string name = Path.GetFileName(dir);
@@ -97,7 +104,12 @@ namespace IntegratedAssignmentSoftware
             TextRange textRange = new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd);
             return textRange.Text;
         }
-
+        void SetRichText(RichTextBox rtb, string rtfText)
+        {
+            var range = new TextRange(rtb.Document.ContentStart, rtb.Document.ContentEnd);
+            using var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(rtfText));
+            range.Load(stream, DataFormats.Text);
+        }
         private void ConfigurationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (ConfigurationComboBox.SelectedItem is ConfigModel selected)

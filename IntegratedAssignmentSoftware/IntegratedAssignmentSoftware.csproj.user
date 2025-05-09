@@ -17,6 +17,9 @@
     <Compile Update="EditProjectWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditTestCaseWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ProjectWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
