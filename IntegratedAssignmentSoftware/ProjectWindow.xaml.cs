@@ -17,6 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Path = System.IO.Path;
 using System.IO.Compression;
+using System.Diagnostics;
 
 namespace IntegratedAssignmentSoftware
 {
@@ -32,6 +33,65 @@ namespace IntegratedAssignmentSoftware
         private ObservableCollection<ConfigModel> _configs = new ObservableCollection<ConfigModel>();
         public ObservableCollection<SubmissionViewModel> Submissions { get; } = new ObservableCollection<SubmissionViewModel>();
         private ProjectModel Project { get; set; }
+
+        private (bool Success, string StdOut, string StdErr)
+        RunShell(string command, string workingDirectory, int timeoutMs = 5000)
+        {
+            var psi = new ProcessStartInfo("cmd.exe", "/C " + command)
+            {
+                WorkingDirectory = workingDirectory,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            using var proc = Process.Start(psi)!;
+            if (!proc.WaitForExit(timeoutMs))
+            {
+                // timed out
+                try { proc.Kill(true); } catch { /* ignore */ }
+                return (false, string.Empty, "Timeout");
+            }
+
+            // process has exited
+            string outText = proc.StandardOutput.ReadToEnd();
+            string errText = proc.StandardError.ReadToEnd();
+            bool ok = proc.ExitCode == 0;
+            return (ok, outText, errText);
+        }
+
+        private (bool Success, string StdOut, string StdErr)
+        RunWithInput(string command, string workingDirectory, string input, int timeoutMs = 5000)
+        {
+            var psi = new ProcessStartInfo("cmd.exe", "/C " + command)
+            {
+                WorkingDirectory = workingDirectory,
+                RedirectStandardInput = true,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            using var proc = Process.Start(psi)!;
+
+            // write the input and close the stream so the process can proceed
+            proc.StandardInput.Write(input);
+            proc.StandardInput.Close();
+
+            if (!proc.WaitForExit(timeoutMs))
+            {
+                // timed out
+                try { proc.Kill(true); } catch { /* ignore */ }
+                return (false, string.Empty, "Timeout");
+            }
+
+            string outText = proc.StandardOutput.ReadToEnd();
+            string errText = proc.StandardError.ReadToEnd();
+            bool ok = proc.ExitCode == 0;
+            return (ok, outText, errText);
+        }
         public ProjectWindow(ProjectModel project)
         {
             Project = project;
@@ -108,17 +168,53 @@ namespace IntegratedAssignmentSoftware
             {
                 string name = Path.GetFileName(dir);
 
-                int passed = EvaluateSubmission(dir, testCases);
-
-                Submissions.Add(new SubmissionViewModel(name, passed, totalTests));
+                var results = EvaluateSubmission(dir, Project.TestCases);
+                Submissions.Add(new SubmissionViewModel(name, results));
             }
         }
 
-        private int EvaluateSubmission(string submissionFolder, IList<TestCaseModel> tests)
+        private List<TestCaseResult> EvaluateSubmission(string submissionDir, IList<TestCaseModel> tests)
         {
-            // TODO: Compile & run each test, return how many passed.
-            // For now, return a random number for demo:
-            return new Random(submissionFolder.GetHashCode()).Next(0, tests.Count + 1);
+            var cfg = Project.Configuration;
+
+            // 1) compile
+            var (okC, _, errC) = RunShell(cfg.Compile, submissionDir);
+            if (!okC)
+            {
+                // if compile fails, mark all tests as failed
+                return tests.Select(tc => new TestCaseResult(tc, false)).ToList();
+            }
+
+            // 2) run each test
+            var results = new List<TestCaseResult>(tests.Count);
+            bool fileBased = cfg.Run.Contains("{{input}}") && cfg.Run.Contains("{{output}}");
+
+            foreach (var tc in tests)
+            {
+                bool passed;
+                if (fileBased)
+                {
+                    // fill file‐redirection placeholders
+                    string cmd = TemplateHelper.FillTemplate(cfg.Run, new Dictionary<string, string>
+                    {
+                        ["input"] = tc.Input,
+                        ["output"] = tc.Output
+                    });
+                    var (okR, _, _) = RunShell(cmd, submissionDir);
+                    passed = okR;
+                }
+                else
+                {
+                    // pipe via stdin/stdout
+                    string cmd = cfg.Run; // e.g. "./Main"
+                    var (okR, stdOut, _) = RunWithInput(cmd, submissionDir, tc.Input);
+                    passed = stdOut.TrimEnd() == tc.Output.TrimEnd();
+                }
+
+                results.Add(new TestCaseResult(tc, passed));
+            }
+
+            return results;
         }
 
         private void SaveResults_Click(object sender, RoutedEventArgs e)
@@ -171,18 +267,25 @@ namespace IntegratedAssignmentSoftware
             {
                 try
                 {
+                    System.Diagnostics.Debug.WriteLine(dir);
                     Directory.Delete(dir, recursive: true);
+                    System.Diagnostics.Debug.WriteLine("Wiped folder.");
                 }
                 catch (Exception ex)
                 {
                     Console.Error.WriteLine($"Couldn’t delete {dir}: {ex.Message}");
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
                 }
             }
 
             foreach (var file in Directory.GetFiles(extractFolder))
             {
-                try { File.Delete(file); }
-                catch { /* …*/ }
+                try 
+                { 
+                    File.Delete(file);
+                    System.Diagnostics.Debug.WriteLine("Wiped file.");
+                }
+                catch { System.Diagnostics.Debug.WriteLine("Could not wipe file."); }
             }
         }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
