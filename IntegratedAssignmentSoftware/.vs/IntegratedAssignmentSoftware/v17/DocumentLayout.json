@@ -7,6 +7,30 @@
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:edittestcasewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\configurations\\java.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:configurations\\java.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\edittestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:edittestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\edittestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:edittestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\addtestcasewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addtestcasewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\addtestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -47,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -61,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -83,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:testcasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\asus\\documents\\github\\project\\integratedassignmentsoftware\\addconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -98,8 +102,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Java.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\Configurations\\Java.json",
+              "RelativeDocumentMoniker": "Configurations\\Java.json",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\Configurations\\Java.json",
+              "RelativeToolTip": "Configurations\\Java.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-10T03:03:27.803Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "EditTestCaseWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\EditTestCaseWindow.xaml",
               "RelativeDocumentMoniker": "EditTestCaseWindow.xaml",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "AddConfigurationWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddConfigurationWindow.xaml.cs",
@@ -135,12 +152,11 @@
               "RelativeToolTip": "AddConfigurationWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T08:34:10.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T08:34:10.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "EditConfigurationWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
               "RelativeDocumentMoniker": "EditConfigurationWindow.xaml.cs",
@@ -148,12 +164,11 @@
               "RelativeToolTip": "EditConfigurationWindow.xaml.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAAAEcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T14:25:39.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T14:25:39.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "SubmissionViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\SubmissionViewModel.cs",
               "RelativeDocumentMoniker": "SubmissionViewModel.cs",
@@ -165,20 +180,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "ProjectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "ProjectWindow.xaml.cs",
               "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
               "RelativeToolTip": "ProjectWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAcwE8AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAUwFwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T09:01:11.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "EditProjectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "EditProjectWindow.xaml.cs",
@@ -186,12 +201,11 @@
               "RelativeToolTip": "EditProjectWindow.xaml.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAmwH0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T08:09:40.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T08:09:40.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "AddTestCaseWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddTestCaseWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddTestCaseWindow.xaml.cs",
@@ -199,8 +213,7 @@
               "RelativeToolTip": "AddTestCaseWindow.xaml.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAwwFMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:51:25.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T10:51:25.341Z"
             },
             {
               "$type": "Document",
@@ -217,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ProjectWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml",
               "RelativeDocumentMoniker": "ProjectWindow.xaml",
@@ -228,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "JsonLoader.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\JsonLoader.cs",
               "RelativeDocumentMoniker": "JsonLoader.cs",
@@ -240,19 +253,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "AddTestCaseWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddTestCaseWindow.xaml",
               "RelativeDocumentMoniker": "AddTestCaseWindow.xaml",
               "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddTestCaseWindow.xaml",
               "RelativeToolTip": "AddTestCaseWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T10:39:48.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T10:39:48.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -263,31 +275,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "EditProjectWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
               "RelativeDocumentMoniker": "EditProjectWindow.xaml",
               "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
               "RelativeToolTip": "EditProjectWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T20:08:01.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T20:08:01.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 3,
               "Title": "CompilerService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
               "RelativeDocumentMoniker": "Services\\CompilerService.cs",
               "ToolTip": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
               "RelativeToolTip": "Services\\CompilerService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T05:44:27.857Z"
+              "WhenOpened": "2025-05-03T05:44:27.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ProjectModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
               "RelativeDocumentMoniker": "ProjectModel.cs",
@@ -295,12 +307,11 @@
               "RelativeToolTip": "ProjectModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:25:57.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T21:25:57.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "AddProjectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddProjectWindow.xaml.cs",
@@ -308,12 +319,11 @@
               "RelativeToolTip": "AddProjectWindow.xaml.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAtwDEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T07:49:39.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T07:49:39.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AddConfigurationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml",
               "RelativeDocumentMoniker": "AddConfigurationWindow.xaml",
@@ -324,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "AddProjectWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
               "RelativeDocumentMoniker": "AddProjectWindow.xaml",
@@ -335,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "EditConfigurationWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
               "RelativeDocumentMoniker": "EditConfigurationWindow.xaml",
@@ -346,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TestCaseModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\TestCaseModel.cs",
               "RelativeDocumentMoniker": "TestCaseModel.cs",
@@ -358,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "ConfigModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\ConfigModel.cs",
               "RelativeDocumentMoniker": "ConfigModel.cs",
@@ -366,7 +376,8 @@
               "RelativeToolTip": "ConfigModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:19:15.707Z"
+              "WhenOpened": "2025-04-30T21:19:15.707Z",
+              "EditorCaption": ""
             }
           ]
         }

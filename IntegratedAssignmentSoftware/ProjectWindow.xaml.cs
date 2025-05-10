@@ -16,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Path = System.IO.Path;
+using System.IO.Compression;
 
 namespace IntegratedAssignmentSoftware
 {
@@ -39,7 +40,7 @@ namespace IntegratedAssignmentSoftware
             SetRichText(DescriptionTextBox, project.Description);
             if (!string.IsNullOrEmpty(project.SubmissionsDirectory))
             {
-                LoadSubmissions(project.SubmissionsDirectory);
+                LoadSubmissions(Path.Combine(project.SubmissionsDirectory, "Extracted"));
             }
             projectsDir = Path.Combine(AppContext.BaseDirectory, "Projects");
             Directory.CreateDirectory(projectsDir);
@@ -67,8 +68,33 @@ namespace IntegratedAssignmentSoftware
             if (dlg.ShowDialog() != true)
                 return;
             var selectedPath = dlg.FolderName;
-            LoadSubmissions(selectedPath);
             Project.SubmissionsDirectory = selectedPath;
+            string extractFolder = ExtractSubmissions(Project.SubmissionsDirectory);
+            LoadSubmissions(extractFolder);
+        }
+        private string ExtractSubmissions(string submissionsDirectory)
+        {
+            string zipFolder = submissionsDirectory;
+            string extractFolder = Path.Combine(zipFolder, "Extracted");
+
+            WipeExtractedFolder(extractFolder);
+            
+            Directory.CreateDirectory(extractFolder);
+
+            
+            foreach (var zipPath in Directory.GetFiles(zipFolder, "*.zip"))
+            {
+                string folderName = Path.GetFileNameWithoutExtension(zipPath);
+                string outDir = Path.Combine(extractFolder, folderName);
+                /*
+                if (Directory.Exists(outDir))
+                {
+                    Directory.Delete(outDir, true);
+                }*/
+                Directory.CreateDirectory(outDir);
+                ZipFile.ExtractToDirectory(zipPath, outDir);
+            }
+            return extractFolder;
         }
         private void LoadSubmissions(string rootFolder)
         {
@@ -136,7 +162,29 @@ namespace IntegratedAssignmentSoftware
                 }
             }
         }
+        private void WipeExtractedFolder(string extractFolder)
+        {
+            if (!Directory.Exists(extractFolder))
+                return;
 
+            foreach (var dir in Directory.GetDirectories(extractFolder))
+            {
+                try
+                {
+                    Directory.Delete(dir, recursive: true);
+                }
+                catch (Exception ex)
+                {
+                    Console.Error.WriteLine($"Couldn’t delete {dir}: {ex.Message}");
+                }
+            }
+
+            foreach (var file in Directory.GetFiles(extractFolder))
+            {
+                try { File.Delete(file); }
+                catch { /* …*/ }
+            }
+        }
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(NameTextBox.Text) || string.IsNullOrWhiteSpace(GetRichText(DescriptionTextBox)))
