@@ -173,45 +173,56 @@ namespace IntegratedAssignmentSoftware
             }
         }
 
-        private List<TestCaseResult> EvaluateSubmission(string submissionDir, IList<TestCaseModel> tests)
+        private List<TestCaseResult> EvaluateSubmission(string submissionFolder, IList<TestCaseModel> tests)
         {
             var cfg = Project.Configuration;
-
-            // 1) compile
-            var (okC, _, errC) = RunShell(cfg.Compile, submissionDir);
-            if (!okC)
+            Debug.WriteLine("Config compile: " + cfg.Compile);
+            Debug.WriteLine("Config run: " + cfg.Run);
+            //skip if cfg.Compile is empty
+            Debug.WriteLine("Checking compile command.");
+            
+            if (!string.IsNullOrWhiteSpace(cfg.Compile))
             {
-                // if compile fails, mark all tests as failed
-                return tests.Select(tc => new TestCaseResult(tc, false)).ToList();
+                var (okC, _, errC) = RunShell(cfg.Compile, submissionFolder);
+                if (!okC)
+                {
+                    // mark all as failed if compile fails
+                    return tests
+                        .Select(tc => new TestCaseResult(tc, false))
+                        .ToList();
+                }
+            }
+            else
+            {
+                Debug.WriteLine("No compile command found");
             }
 
-            // 2) run each test
-            var results = new List<TestCaseResult>(tests.Count);
-            bool fileBased = cfg.Run.Contains("{{input}}") && cfg.Run.Contains("{{output}}");
-
+                // Run each test by piping the Input string into stdin
+                var results = new List<TestCaseResult>(tests.Count);
             foreach (var tc in tests)
             {
-                bool passed;
-                if (fileBased)
+                Debug.WriteLine("Running Test Case: " + tc.Name);
+                // RunWithInput feeds tc.Input into stdin, captures stdout
+                var (okR, stdout, stderr) = RunWithInput(
+                    cfg.Run,
+                    submissionFolder,
+                    tc.Input
+                );
+
+                bool passed = false;
+                if (okR)
                 {
-                    // fill file‐redirection placeholders
-                    string cmd = TemplateHelper.FillTemplate(cfg.Run, new Dictionary<string, string>
-                    {
-                        ["input"] = tc.Input,
-                        ["output"] = tc.Output
-                    });
-                    var (okR, _, _) = RunShell(cmd, submissionDir);
-                    passed = okR;
+                    Debug.WriteLine("Checking Test Case Result: " + tc.Name + " for " + submissionFolder);
+                    // Compare trimmed output text to expected
+                    passed = stdout.TrimEnd() == tc.Output.TrimEnd();
+                    Debug.WriteLine("Test case passed: " + passed);
                 }
                 else
                 {
-                    // pipe via stdin/stdout
-                    string cmd = cfg.Run; // e.g. "./Main"
-                    var (okR, stdOut, _) = RunWithInput(cmd, submissionDir, tc.Input);
-                    passed = stdOut.TrimEnd() == tc.Output.TrimEnd();
+                    Debug.WriteLine("Run failed.");
                 }
 
-                results.Add(new TestCaseResult(tc, passed));
+                    results.Add(new TestCaseResult(tc, passed));
             }
 
             return results;
@@ -316,6 +327,12 @@ namespace IntegratedAssignmentSoftware
                 }
             }
             MessageBox.Show("Project saved successfully.");
+        }
+
+        private void RunButton_Click(object sender, RoutedEventArgs e)
+        {
+            Submissions.Clear();
+            LoadSubmissions(Path.Combine(Project.SubmissionsDirectory, "Extracted"));
         }
     } 
 }
