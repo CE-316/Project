@@ -12,7 +12,7 @@ namespace IntegratedAssignmentSoftware
     {
         public string Name { get; }
         public IReadOnlyList<TestCaseResult> Results { get; }
-
+        public string Code { get; }
         public int PassedCount => Results.Count(r => r.Passed);
         public int TotalCount => Results.Count;
 
@@ -26,9 +26,10 @@ namespace IntegratedAssignmentSoftware
             }
         }
 
-        public SubmissionViewModel(string name, IEnumerable<TestCaseResult> results)
+        public SubmissionViewModel(string name, IEnumerable<TestCaseResult> results, string code)
         {
             Name = name;
+            Code = code;
             Results = results.ToList();
         }
 

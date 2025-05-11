@@ -62,7 +62,7 @@
                             Content="Save results to..."></Button>
                 </StackPanel>
                 
-                <ListBox Height="370" x:Name="SubmissionsList"
+                <ListBox SelectionChanged="SubmissionsList_SelectionChanged" Height="370" x:Name="SubmissionsList"
                          Margin="0,5,0,0">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -79,11 +79,14 @@
             </StackPanel>
 
             <TabControl Grid.Row="4" Grid.Column="3" x:Name="TestCasesTab"
-                ItemsSource="{Binding Project.TestCases}"
+                ItemsSource="{Binding SelectedItem.Results, ElementName=SubmissionsList}"
                 Margin="5">
                 <TabControl.ItemTemplate>
-                        <DataTemplate>
-                        <TextBlock Text="{Binding Name}" />
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse Fill="{Binding DotBrush}" Width="12" Height="12" Margin="0,0,8,0"></Ellipse>
+                            <TextBlock Text="{Binding TestCase.Name}" />
+                        </StackPanel>
                     </DataTemplate>
                     </TabControl.ItemTemplate>
 
@@ -91,16 +94,29 @@
                         <DataTemplate>
                             <StackPanel Margin="10">
                                 <TextBlock Text="Input:" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
+                                <TextBlock Text="{Binding TestCase.Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
 
                                 <TextBlock Text="Expected Output:" FontWeight="Bold"/>
-                            <TextBlock Text="{Binding Output}" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
                         </StackPanel>
                         </DataTemplate>
                     </TabControl.ContentTemplate>
                 </TabControl>
-            
-            <StackPanel Margin="5" Grid.Row="2" Grid.RowSpan="2" Grid.Column="3" Background="Red"></StackPanel>
+            <TextBox
+                     Grid.Row="2"
+                     Grid.RowSpan="2"
+                     Grid.Column="3"
+                     x:Name="CodeViewer"
+                     FontFamily="Consolas"
+                     FontSize="14"
+                     IsReadOnly="True"
+                     AcceptsReturn="True"
+                     AcceptsTab="True"
+                     TextWrapping="NoWrap"
+                     VerticalScrollBarVisibility="Auto"
+                     HorizontalScrollBarVisibility="Auto"
+                     Background="WhiteSmoke"
+                     Margin="5"/>
         </Grid>
     </DockPanel>
 </Window>

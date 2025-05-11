@@ -170,7 +170,12 @@ namespace IntegratedAssignmentSoftware
                 string name = Path.GetFileName(dir);
 
                 var results = EvaluateSubmission(dir, Project.TestCases);
-                Submissions.Add(new SubmissionViewModel(name, results));
+                string code = "";
+                foreach (var file in Directory.GetFiles(dir))
+                {
+                    code = File.ReadAllText(file);
+                }
+                Submissions.Add(new SubmissionViewModel(name, results, code));
             }
         }
 
@@ -334,6 +339,14 @@ namespace IntegratedAssignmentSoftware
         {
             Submissions.Clear();
             LoadSubmissions(Path.Combine(Project.SubmissionsDirectory, "Extracted"));
+        }
+
+        private void SubmissionsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ListBox listBox && listBox.SelectedItem is SubmissionViewModel submissionViewModel)
+            {
+                CodeViewer.Text = submissionViewModel.Code;
+            }
         }
     } 
 }
