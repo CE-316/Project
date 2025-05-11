@@ -32,7 +32,7 @@ namespace IntegratedAssignmentSoftware
         private string originalPath;
         private ObservableCollection<ConfigModel> _configs = new ObservableCollection<ConfigModel>();
         public ObservableCollection<SubmissionViewModel> Submissions { get; } = new ObservableCollection<SubmissionViewModel>();
-        private ProjectModel Project { get; set; }
+        public ProjectModel Project { get; set; }
 
         private (bool Success, string StdOut, string StdErr)
         RunShell(string command, string workingDirectory, int timeoutMs = 5000)
@@ -94,8 +94,9 @@ namespace IntegratedAssignmentSoftware
         }
         public ProjectWindow(ProjectModel project)
         {
-            Project = project;
             InitializeComponent();
+            Project = project;
+            DataContext = this;
             NameTextBox.Text = project.Name;
             SetRichText(DescriptionTextBox, project.Description);
             if (!string.IsNullOrEmpty(project.SubmissionsDirectory))

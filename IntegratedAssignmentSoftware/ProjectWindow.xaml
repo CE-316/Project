@@ -77,8 +77,29 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </StackPanel>
-            <StackPanel Margin="5" Background="Green" Grid.Row="4" Grid.Column="3">
-            </StackPanel>
+
+            <TabControl Grid.Row="4" Grid.Column="3" x:Name="TestCasesTab"
+                ItemsSource="{Binding Project.TestCases}"
+                Margin="5">
+                <TabControl.ItemTemplate>
+                        <DataTemplate>
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+                    </TabControl.ItemTemplate>
+
+                    <TabControl.ContentTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="10">
+                                <TextBlock Text="Input:" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
+
+                                <TextBlock Text="Expected Output:" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Output}" TextWrapping="Wrap"/>
+                        </StackPanel>
+                        </DataTemplate>
+                    </TabControl.ContentTemplate>
+                </TabControl>
+            
             <StackPanel Margin="5" Grid.Row="2" Grid.RowSpan="2" Grid.Column="3" Background="Red"></StackPanel>
         </Grid>
     </DockPanel>
