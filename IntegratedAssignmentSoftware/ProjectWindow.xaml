@@ -59,19 +59,35 @@
                             HorizontalAlignment="Left"
                             Click="SaveResults_Click"
                             Width="120" 
-                            Content="Save results to..."></Button>
+                            Content="Save Results"></Button>
                 </StackPanel>
                 
                 <ListBox SelectionChanged="SubmissionsList_SelectionChanged" Height="370" x:Name="SubmissionsList"
                          Margin="0,5,0,0">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
+                           
                             <StackPanel Orientation="Horizontal" Margin="2">
                                 <Ellipse Width="12" Height="12"
                                          Fill="{Binding DotBrush}"
                                          Margin="0,0,8,0"/>
                                 <TextBlock Text="{Binding Name}"
                                            VerticalAlignment="Center"/>
+                                <TextBlock FontWeight="Bold" VerticalAlignment="Center">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}  |   {0}/{1} Passed">
+                                            <Binding Path="PassedCount"></Binding>
+                                            <Binding Path="TotalCount"></Binding>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                                <TextBlock FontWeight="Bold" VerticalAlignment="Center">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat="{}  |   {0} Points">
+                                            <Binding Path="Points"></Binding>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
@@ -97,7 +113,10 @@
                                 <TextBlock Text="{Binding TestCase.Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
 
                                 <TextBlock Text="Expected Output:" FontWeight="Bold"/>
-                            <TextBlock Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
+
+                                <TextBlock Text="Points:" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding TestCase.Points}" TextWrapping="Wrap"/>
                         </StackPanel>
                         </DataTemplate>
                     </TabControl.ContentTemplate>

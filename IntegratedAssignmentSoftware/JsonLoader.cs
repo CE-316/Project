@@ -16,7 +16,8 @@ namespace IntegratedAssignmentSoftware
         {
             PropertyNameCaseInsensitive = true,
             AllowTrailingCommas = true,
-            ReadCommentHandling = JsonCommentHandling.Skip
+            ReadCommentHandling = JsonCommentHandling.Skip,
+            ReferenceHandler = ReferenceHandler.Preserve
         };
 
         // Reads the JSON and deserializes it into the requested type.

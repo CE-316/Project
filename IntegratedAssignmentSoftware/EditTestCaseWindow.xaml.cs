@@ -30,6 +30,10 @@ namespace IntegratedAssignmentSoftware
             _projectModel = projectModel;
             _testCaseModel = testCaseModel;
             InitializeComponent();
+            InputTextBox.Text = testCaseModel.Input;
+            OutputTextBox.Text = testCaseModel.Output;
+            TestCaseNameTextBox.Text = testCaseModel.Name;
+            PointsUpDown.Value = testCaseModel.Points;
         }
 
         private void ChooseInputFileButton_Click(object sender, RoutedEventArgs e)

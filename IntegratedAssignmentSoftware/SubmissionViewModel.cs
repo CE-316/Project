@@ -16,6 +16,21 @@ namespace IntegratedAssignmentSoftware
         public int PassedCount => Results.Count(r => r.Passed);
         public int TotalCount => Results.Count;
 
+        public int Points
+        {
+            get
+            {
+                int sum = 0;
+                foreach (var r in Results)
+                {
+                    if (r.Passed)
+                    {
+                        sum += r.TestCase.Points;
+                    }
+                }
+                return sum;
+            }
+        }
         public Brush DotBrush
         {
             get

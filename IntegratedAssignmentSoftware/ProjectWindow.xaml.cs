@@ -127,7 +127,9 @@ namespace IntegratedAssignmentSoftware
             var dlg = new OpenFolderDialog();
 
             if (dlg.ShowDialog() != true)
+            {
                 return;
+            }
             var selectedPath = dlg.FolderName;
             Project.SubmissionsDirectory = selectedPath;
             string extractFolder = ExtractSubmissions(Project.SubmissionsDirectory);
@@ -236,7 +238,6 @@ namespace IntegratedAssignmentSoftware
 
         private void SaveResults_Click(object sender, RoutedEventArgs e)
         {
-            
         }
         string GetRichText(RichTextBox rtb)
         {

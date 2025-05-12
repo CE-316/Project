@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Nodes;
+using System.Collections.ObjectModel;
 
 namespace IntegratedAssignmentSoftware
 {
@@ -25,5 +26,7 @@ namespace IntegratedAssignmentSoftware
 
         [JsonPropertyName("testCases")]
         public List<TestCaseModel> TestCases { get; set; } = new List<TestCaseModel>();
+        [JsonPropertyName("savedSubmissionResults")]
+        public ObservableCollection<SubmissionViewModel> SavedSubmissionResults { get; set; } = new ObservableCollection<SubmissionViewModel>();
     }
 }
