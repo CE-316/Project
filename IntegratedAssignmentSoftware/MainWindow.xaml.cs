@@ -110,12 +110,20 @@ namespace IntegratedAssignmentSoftware
 
         private void EditConfigButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedConfig = ConfigurationListBox.SelectedItem as FileInfo;
-            bool? result = EditConfigurationWindow.LaunchFor(selectedConfig);
-            if (result == true)
+            var selectedConfig = ConfigurationListBox.SelectedItem as ConfigModel;
+            if (selectedConfig == null)
             {
-                LoadConfigFiles();
+                MessageBox.Show("Please select a configuration to edit.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
             }
+            string configFilePath = Path.Combine(configDir, selectedConfig.Language + ".json");
+            if (!File.Exists(configFilePath))
+            {
+                MessageBox.Show("Configuration file not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            EditConfigurationWindow.LaunchFor(new FileInfo(configFilePath));
+            LoadConfigFiles();
         }
 
         private void DeleteConfigButton_Click(object sender, RoutedEventArgs e)
