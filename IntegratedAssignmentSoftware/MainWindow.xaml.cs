@@ -128,19 +128,29 @@ namespace IntegratedAssignmentSoftware
 
         private void DeleteConfigButton_Click(object sender, RoutedEventArgs e)
         {
-            var selectedConfig = ConfigurationListBox.SelectedItem as FileInfo;
+
+
+
+            var selectedConfig = ConfigurationListBox.SelectedItem as ConfigModel;
+
             if (selectedConfig == null)
             {
                 MessageBox.Show("Please select a configuration file to delete.", "No File Selected",
                                 MessageBoxButton.OK, MessageBoxImage.Information);
                 return;
             }
+            string configFilePath = Path.Combine(configDir, selectedConfig.Language + ".json");
+
+
+
             try
             {
-                File.Delete(selectedConfig.FullName);
+
+                File.Delete(configFilePath);
                 LoadConfigFiles();
                 MessageBox.Show("Configuration deleted successfully.", "Success",
-                                MessageBoxButton.OK, MessageBoxImage.Information);
+                                MessageBoxButton.OK, MessageBoxImage
+                                .Information);
             }
             catch (Exception ex)
             {

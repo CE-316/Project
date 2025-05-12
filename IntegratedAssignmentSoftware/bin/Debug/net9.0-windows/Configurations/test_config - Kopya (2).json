@@ -1,5 +1,0 @@
-﻿{
-    "language": "csharp",
-    "compile": "mcs -out:{{exe}} {{source}}",
-    "run": "mono {{exe}}"
-}
