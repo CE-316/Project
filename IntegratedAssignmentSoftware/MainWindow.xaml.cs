@@ -90,7 +90,8 @@ namespace IntegratedAssignmentSoftware
             var term = ConfigurationSearchBox.Text.Trim().ToLowerInvariant();
             configListView.Filter = string.IsNullOrEmpty(term)
                 ? null
-                : new Predicate<object>(o => ((FileInfo)o).Name.ToLowerInvariant().Contains(term));
+                : new Predicate<object>(o => ((ConfigModel)o).Language.ToLowerInvariant().Contains(term));
+
             configListView.Refresh();
         }
 
