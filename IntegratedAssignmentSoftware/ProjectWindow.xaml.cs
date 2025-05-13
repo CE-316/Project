@@ -180,9 +180,11 @@ namespace IntegratedAssignmentSoftware
 
                 var results = EvaluateSubmission(dir, Project.TestCases);
                 string code = "";
-                foreach (var file in Directory.GetFiles(dir))
+                var files = Directory.GetFiles(dir, "Main.*");
+                var tempCode = files.FirstOrDefault();
+                if (tempCode != null)
                 {
-                    code = File.ReadAllText(file);
+                    code = File.ReadAllText(tempCode);
                 }
                 Submissions.Add(new SubmissionViewModel(name, results, code));
 
@@ -200,11 +202,12 @@ namespace IntegratedAssignmentSoftware
             if (!string.IsNullOrWhiteSpace(cfg.Compile))
             {
                 var (okC, _, errC) = RunShell(cfg.Compile, submissionFolder);
+
                 if (!okC)
                 {
                     // mark all as failed if compile fails
                     return tests
-                        .Select(tc => new TestCaseResult(tc, false))
+                        .Select(tc => new TestCaseResult(tc, false, errC))
                         .ToList();
                 }
             }
@@ -224,7 +227,10 @@ namespace IntegratedAssignmentSoftware
                     submissionFolder,
                     tc.Input
                 );
-
+                Debug.WriteLine($"─── RUN `{cfg.Run}` on `{submissionFolder}` ───");
+                Debug.WriteLine($"Success: {okR}");
+                Debug.WriteLine($"STDOUT:\n{stdout}");
+                Debug.WriteLine($"STDERR:\n{stderr}");
                 bool passed = false;
                 if (okR)
                 {
@@ -238,7 +244,7 @@ namespace IntegratedAssignmentSoftware
                     Debug.WriteLine("Run failed.");
                 }
 
-                    results.Add(new TestCaseResult(tc, passed));
+                    results.Add(new TestCaseResult(tc, passed, stdout));
             }
 
             return results;

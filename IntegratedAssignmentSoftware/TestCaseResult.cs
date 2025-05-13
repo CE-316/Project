@@ -13,6 +13,8 @@ namespace IntegratedAssignmentSoftware
     {
         public TestCaseModel TestCase { get; set; }
 
+        public string Output { get; set; }
+
         public bool _passed;
         public bool Passed
 
@@ -31,10 +33,11 @@ namespace IntegratedAssignmentSoftware
         public string DotColorHex => Passed ? "#008000" : "#FF0000";
 
         public TestCaseResult() { }
-        public TestCaseResult(TestCaseModel testCase, bool passed)
+        public TestCaseResult(TestCaseModel testCase, bool passed, string output)
         {
             TestCase = testCase;
             Passed = passed;
+            Output = output;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

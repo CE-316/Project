@@ -5,54 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="Project Window" Height="1080" Width="1920">
+        Title="Project Window" MinHeight="850" MinWidth="900" WindowState="Maximized">
     <DockPanel>
-        <ToolBarTray DockPanel.Dock="Top">
-            <ToolBar>
-                <Button Content="New"/>
-                <Button Content="Open"/>
-                <Separator/>
-                <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save"/>
-            </ToolBar>
-        </ToolBarTray>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="20"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="auto"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="20"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <TextBox VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" x:Name="NameTextBox" Text="Project Name"></TextBox>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3">
-                <TextBlock HorizontalAlignment="Right" Padding="5" Margin="5" Text="Choose configuration:"></TextBlock>
-                <ComboBox x:Name="ConfigurationComboBox"
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar>
+                    <Button Content="New"/>
+                    <Button Content="Open"/>
+                    <Separator/>
+                    <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save"/>
+                </ToolBar>
+            </ToolBarTray>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBox VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" x:Name="NameTextBox" Text="Project Name"></TextBox>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3">
+                    <TextBlock HorizontalAlignment="Right" Padding="5" Margin="5" Text="Choose configuration:"></TextBlock>
+                    <ComboBox x:Name="ConfigurationComboBox"
                           Width="250"
                           Margin="5"
                           DisplayMemberPath="Language"
                           SelectionChanged="ConfigurationComboBox_SelectionChanged"/>
-                <Button x:Name="RunButton" Click="RunButton_Click" HorizontalAlignment="Right" Padding="5" Margin="5" Content="Run"></Button>
-            </StackPanel>
-            <RichTextBox MinHeight="500" MinWidth="500" Margin="5" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="DescriptionTextBox"></RichTextBox>
-            <StackPanel Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
-                <StackPanel Orientation="Horizontal">
-                    <Button 
+                    <Button x:Name="RunButton" Click="RunButton_Click" HorizontalAlignment="Right" Padding="5" Margin="5" Content="Run"></Button>
+                </StackPanel>
+                <RichTextBox Height="500" Width="500" Margin="5" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="DescriptionTextBox"></RichTextBox>
+                <DockPanel LastChildFill="True" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5">
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <Button
                             Padding="5"
                             x:Name="SelectFolder"
                             HorizontalAlignment="Left"
                             Content="Select Submissions Folder..."
                             Click="SelectFolder_Click"
                             Width="180"/>
-                    <Button
+                        <Button
                             Padding="5"
                             x:Name="SaveResults"
                             Margin="10,0"
@@ -60,68 +59,75 @@
                             Click="SaveResults_Click"
                             Width="120" 
                             Content="Save Results"></Button>
-                </StackPanel>
-                
-                <ListBox SelectionChanged="SubmissionsList_SelectionChanged" Height="370" x:Name="SubmissionsList"
+                    </StackPanel>
+
+                    <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="SubmissionsList_SelectionChanged" MaxHeight="370" x:Name="SubmissionsList"
                          Margin="0,5,0,0">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                           
-                            <StackPanel Orientation="Horizontal" Margin="2">
-                                <Ellipse Width="12" Height="12"
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Margin="2">
+                                    <Ellipse Width="12" Height="12"
                                          Fill="{Binding DotBrush}"
                                          Margin="0,0,8,0"/>
-                                <TextBlock Text="{Binding Name}"
+                                    <TextBlock Text="{Binding Name}"
                                            VerticalAlignment="Center"/>
-                                <TextBlock FontWeight="Bold" VerticalAlignment="Center">
-                                    <TextBlock.Text>
-                                        <MultiBinding StringFormat="{}  |   {0}/{1} Passed">
-                                            <Binding Path="PassedCount"></Binding>
-                                            <Binding Path="TotalCount"></Binding>
-                                        </MultiBinding>
-                                    </TextBlock.Text>
-                                </TextBlock>
-                                <TextBlock FontWeight="Bold" VerticalAlignment="Center">
-                                    <TextBlock.Text>
-                                        <MultiBinding StringFormat="{}  |   {0} Points">
-                                            <Binding Path="Points"></Binding>
-                                        </MultiBinding>
-                                    </TextBlock.Text>
-                                </TextBlock>
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-            </StackPanel>
+                                    <TextBlock FontWeight="Bold" VerticalAlignment="Center">
+                                        <TextBlock.Text>
+                                            <MultiBinding StringFormat="{}  |   {0}/{1} Passed">
+                                                <Binding Path="PassedCount"></Binding>
+                                                <Binding Path="TotalCount"></Binding>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                    <TextBlock FontWeight="Bold" VerticalAlignment="Center">
+                                        <TextBlock.Text>
+                                            <MultiBinding StringFormat="{}  |   {0} Points">
+                                                <Binding Path="Points"></Binding>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
 
-            <TabControl Grid.Row="4" Grid.Column="3" x:Name="TestCasesTab"
+                <TabControl MaxHeight="196" Grid.Row="4" Grid.Column="3" x:Name="TestCasesTab"
                 ItemsSource="{Binding SelectedItem.Results, ElementName=SubmissionsList}"
                 Margin="5">
-                <TabControl.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Ellipse Fill="{Binding DotColorHex}" Width="12" Height="12" Margin="0,0,8,0"></Ellipse>
-                            <TextBlock Text="{Binding TestCase.Name}" />
-                        </StackPanel>
-                    </DataTemplate>
+                    <TabControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Ellipse Fill="{Binding DotColorHex}" Width="12" Height="12" Margin="0,0,8,0"></Ellipse>
+                                <TextBlock Text="{Binding TestCase.Name}" />
+                            </StackPanel>
+                        </DataTemplate>
                     </TabControl.ItemTemplate>
 
                     <TabControl.ContentTemplate>
                         <DataTemplate>
-                            <StackPanel Margin="10">
-                                <TextBlock Text="Input:" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding TestCase.Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
+                            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                    HorizontalScrollBarVisibility="Disabled"
+                    Padding="5">
+                                <StackPanel Margin="5" CanVerticallyScroll="True">
+                                    <TextBlock Text="Input:" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding TestCase.Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
 
-                                <TextBlock Text="Expected Output:" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
+                                    <TextBlock Text="Expected Output:" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
 
-                                <TextBlock Text="Points:" FontWeight="Bold"/>
-                                <TextBlock Text="{Binding TestCase.Points}" TextWrapping="Wrap"/>
-                        </StackPanel>
+                                    <TextBlock Text="Points:" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding TestCase.Points}" TextWrapping="Wrap"/>
+
+                                    <TextBlock Text="Output:" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Output}" TextWrapping="Wrap"/>
+                                </StackPanel>
+                            </ScrollViewer>
                         </DataTemplate>
                     </TabControl.ContentTemplate>
                 </TabControl>
-            <TextBox
+                <TextBox
+                     MaxHeight="700"
                      Grid.Row="2"
                      Grid.RowSpan="2"
                      Grid.Column="3"
@@ -136,6 +142,6 @@
                      HorizontalScrollBarVisibility="Auto"
                      Background="WhiteSmoke"
                      Margin="5"/>
-        </Grid>
-    </DockPanel>
+            </Grid>
+        </DockPanel>
 </Window>

@@ -53,6 +53,14 @@
             "Extended.Wpf.Toolkit": {
               "target": "Package",
               "version": "[4.7.25104.5739, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[5.2.1, )"
             }
           },
           "imports": [
