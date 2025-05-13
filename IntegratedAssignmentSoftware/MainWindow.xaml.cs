@@ -6,6 +6,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
+using System.Diagnostics;
 
 namespace IntegratedAssignmentSoftware
 {
@@ -66,7 +67,8 @@ namespace IntegratedAssignmentSoftware
                     }
                     catch
                     {
-                        return null;
+                        Debug.WriteLine("Error while loading from file");
+                        throw;
                     }
                 })
                 .Where(p => p != null)

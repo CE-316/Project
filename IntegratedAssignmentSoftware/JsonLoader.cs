@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Nodes;
 using System.IO;
+using System.Diagnostics;
 
 namespace IntegratedAssignmentSoftware
 {
@@ -17,7 +18,6 @@ namespace IntegratedAssignmentSoftware
             PropertyNameCaseInsensitive = true,
             AllowTrailingCommas = true,
             ReadCommentHandling = JsonCommentHandling.Skip,
-            ReferenceHandler = ReferenceHandler.Preserve
         };
 
         // Reads the JSON and deserializes it into the requested type.
@@ -33,8 +33,16 @@ namespace IntegratedAssignmentSoftware
         public static void SaveToFile<T>(T data, string filePath, JsonSerializerOptions? options = null)
         {
             var opts = options ?? new JsonSerializerOptions(_defaultOptions) { WriteIndented = true };
-            string json = JsonSerializer.Serialize(data, opts);
-            File.WriteAllText(filePath, json);
+            try
+            {
+                string json = JsonSerializer.Serialize(data, opts);
+                File.WriteAllText(filePath, json);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("JSON Serializing Error: " + e);
+                throw;
+            }
         }
     }
 }

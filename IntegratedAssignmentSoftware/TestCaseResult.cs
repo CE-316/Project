@@ -11,7 +11,8 @@ namespace IntegratedAssignmentSoftware
 {
     public class TestCaseResult : INotifyPropertyChanged
     {
-        public TestCaseModel TestCase { get; }
+        public TestCaseModel TestCase { get; set; }
+
         public bool _passed;
         public bool Passed
 
@@ -23,16 +24,17 @@ namespace IntegratedAssignmentSoftware
                 {
                     _passed = value;
                     OnPropertyChanged();
-                    OnPropertyChanged(nameof(DotBrush));
+                    OnPropertyChanged(nameof(DotColorHex));
                 }
             }
         }
-        public Brush DotBrush => Passed ? Brushes.Green : Brushes.Red;
+        public string DotColorHex => Passed ? "#008000" : "#FF0000";
 
-        public TestCaseResult(TestCaseModel tc, bool passed)
+        public TestCaseResult() { }
+        public TestCaseResult(TestCaseModel testCase, bool passed)
         {
-            TestCase = tc;
-            _passed = passed;
+            TestCase = testCase;
+            Passed = passed;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;

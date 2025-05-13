@@ -1,12 +1,3 @@
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\Java.json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (2).json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (4).json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (5).json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (6).json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (7).json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopya (8).json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config - Kopyala.json
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Configurations\test_config.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\IntegratedAssignmentSoftware.exe
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\IntegratedAssignmentSoftware.deps.json
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\IntegratedAssignmentSoftware.runtimeconfig.json
@@ -39,7 +30,6 @@ C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\ne
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\ProjectWindow.g.cs
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\App.g.cs
-C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware_Content.g.cs
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware_MarkupCompile.cache
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware_MarkupCompile.lref
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\AddConfigurationWindow.baml

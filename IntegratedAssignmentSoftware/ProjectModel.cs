@@ -27,6 +27,6 @@ namespace IntegratedAssignmentSoftware
         [JsonPropertyName("testCases")]
         public List<TestCaseModel> TestCases { get; set; } = new List<TestCaseModel>();
         [JsonPropertyName("savedSubmissionResults")]
-        public ObservableCollection<SubmissionViewModel> SavedSubmissionResults { get; set; } = new ObservableCollection<SubmissionViewModel>();
+        public List<SubmissionData> SavedSubmissionResults { get; set; } = new List<SubmissionData>();
     }
 }

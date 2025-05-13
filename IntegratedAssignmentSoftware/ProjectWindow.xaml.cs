@@ -99,10 +99,17 @@ namespace IntegratedAssignmentSoftware
             DataContext = this;
             NameTextBox.Text = project.Name;
             SetRichText(DescriptionTextBox, project.Description);
-            if (!string.IsNullOrEmpty(project.SubmissionsDirectory))
+            /*if (!string.IsNullOrEmpty(project.SubmissionsDirectory))
             {
                 LoadSubmissions(Path.Combine(project.SubmissionsDirectory, "Extracted"));
+            }*/
+
+            foreach (SubmissionData submissionData in Project.SavedSubmissionResults)
+            {
+                SubmissionViewModel submissionViewModel = new SubmissionViewModel(submissionData.Name, submissionData.Results, submissionData.Code);
+                Submissions.Add(submissionViewModel);
             }
+
             projectsDir = Path.Combine(AppContext.BaseDirectory, "Projects");
             Directory.CreateDirectory(projectsDir);
             originalPath = Path.Combine(projectsDir, $"{project.Name}.json");
@@ -178,6 +185,7 @@ namespace IntegratedAssignmentSoftware
                     code = File.ReadAllText(file);
                 }
                 Submissions.Add(new SubmissionViewModel(name, results, code));
+
             }
         }
 
@@ -238,6 +246,15 @@ namespace IntegratedAssignmentSoftware
 
         private void SaveResults_Click(object sender, RoutedEventArgs e)
         {
+            Project.SavedSubmissionResults.Clear();
+            foreach (SubmissionViewModel submissionViewModel in Submissions)
+            {
+                SubmissionData submissionData = new SubmissionData();
+                submissionData.Name = submissionViewModel.Name;
+                submissionData.Results = submissionViewModel.Results;
+                submissionData.Code = submissionViewModel.Code;
+                Project.SavedSubmissionResults.Add(submissionData);
+            }
         }
         string GetRichText(RichTextBox rtb)
         {

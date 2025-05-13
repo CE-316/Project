@@ -10,9 +10,9 @@ namespace IntegratedAssignmentSoftware
 {
     public class SubmissionViewModel : INotifyPropertyChanged
     {
-        public string Name { get; }
-        public IReadOnlyList<TestCaseResult> Results { get; }
-        public string Code { get; }
+        public string Name { get; set; }
+        public List<TestCaseResult> Results { get; set; }
+        public string Code { get; set; }
         public int PassedCount => Results.Count(r => r.Passed);
         public int TotalCount => Results.Count;
 

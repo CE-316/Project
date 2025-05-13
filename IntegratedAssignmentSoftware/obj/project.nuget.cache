@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dcItLyIxduw=",
+  "dgSpecHash": "hsWU5G5Oyns=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Documents\\GitHub\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\extended.wpf.toolkit\\4.7.25104.5739\\extended.wpf.toolkit.4.7.25104.5739.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\extended.wpf.toolkit\\4.7.25104.5739\\extended.wpf.toolkit.4.7.25104.5739.nupkg.sha512"
   ],
   "logs": []
 }

@@ -100,7 +100,7 @@
                 <TabControl.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Ellipse Fill="{Binding DotBrush}" Width="12" Height="12" Margin="0,0,8,0"></Ellipse>
+                            <Ellipse Fill="{Binding DotColorHex}" Width="12" Height="12" Margin="0,0,8,0"></Ellipse>
                             <TextBlock Text="{Binding TestCase.Name}" />
                         </StackPanel>
                     </DataTemplate>
