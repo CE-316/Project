@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1200">
+        Title="Integrated Assignment Environment" Height="600" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -23,10 +23,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <!-- Title -->
         <TextBlock Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" TextAlignment="Center" Padding="10,25"/>
-
-        <!-- Configurations Section -->
         <TextBlock Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
         <TextBox x:Name="ConfigurationSearchBox"
              Grid.Row="3"
@@ -34,22 +31,23 @@
              FontSize="20"
              Width="350"
              TextChanged="ConfigurationSearchBox_TextChanged"/>
-        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal"
-            HorizontalAlignment="Left" Margin="0,10,0,10">
+        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
             <Button x:Name="AddConfigurationButton"
-            Click="AddConfigurationButton_Click"
-            Content="Add Configuration +"
-            FontSize="15" Width="160" Height="40"/>
-            <Button x:Name="EditSelectedConfigurationButton"
-            Click="EditConfigButton_Click"
-            Content="Edit Selected Configuration"
-            FontSize="15" Width="200" Height="40"
-            Margin="10,0,0,0"/>
-            <Button x:Name="DeleteSelectedConfigurationButton"
-            Click="DeleteConfigButton_Click"
-            Content="Delete Selected Configuration"
-            FontSize="15" Width="200" Height="40"
-            Margin="10,0,0,0"/>
+                    Click="AddConfigurationButton_Click"
+                    Content="Add Configuration"
+                    FontSize="15"
+                    Width="160"
+                    Height="40"
+                    Margin="5"
+                    />
+            <Button x:Name="ImportConfigurationButton"
+                    Click="ImportConfigurationButton_Click"
+                    Content="Import Configuration"
+                    FontSize="15"
+                    Width="160"
+                    Height="40"
+                    Margin="5"
+                    />
         </StackPanel>
 
         <ListBox x:Name="ConfigurationListBox"
@@ -59,15 +57,25 @@
          ScrollViewer.VerticalScrollBarVisibility="Visible">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Language}"
-                       VerticalAlignment="Center"
-                       Width="350"
-                       Padding="5"/>
+                    <StackPanel Orientation="Horizontal" Margin="0,2">
+                        <TextBlock Text="{Binding Language}" VerticalAlignment="Center" Width="240"/>
+                        <Button x:Name="EditConfigurationButton" Content="Edit"
+                            Click="EditConfigurationButton_Click"
+                            Tag="{Binding}"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Right"
+                            />
+                        <Button x:Name="DeleteConfigurationButton" Content="Delete"
+                            Click="DeleteConfigurationButton_Click"
+                            Tag="{Binding}"
+                            Margin="5,0,0,0"
+                            HorizontalAlignment="Right"    
+                            />
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <!-- Projects Section (unchanged for now) -->
         <TextBlock Text="Projects" Grid.Row="2" Grid.Column="3" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
         <TextBox x:Name="ProjectSearchBox"
              Grid.Row="3"
@@ -75,14 +83,13 @@
              FontSize="20"
              Width="350"
              TextChanged="ProjectSearchBox_TextChanged"/>
-        <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,10">
+        <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
             <Button x:Name="AddProjectButton"
                 Click="AddProjectButton_Click"
-                Content="Add Project +"
+                Content="Add Project"
                 FontSize="15"
                 Width="160"
                 Height="40"/>
-            <!-- You may add a similar Delete Selected Project button here if desired -->
         </StackPanel>
         <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible"
              Margin="0,10,0,10"
@@ -94,7 +101,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,2">
-                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Width="200"/>
+                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Width="210"/>
                         <Button Content="Open"
                             Click="OpenProjectButton_Click"
                             Tag="{Binding}"/>

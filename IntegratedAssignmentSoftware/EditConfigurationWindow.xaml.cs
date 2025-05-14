@@ -10,85 +10,55 @@ namespace IntegratedAssignmentSoftware
     /// 
     public partial class EditConfigurationWindow : Window
     {
-        private readonly string _originalFilePath;
-        private ConfigModel _config;
-        public EditConfigurationWindow(string filePath)
+        private string configsDir;
+        private string fileName;
+        private string fullPath;
+        private string originalPath;
+        private ConfigModel Config;
+        public EditConfigurationWindow(ConfigModel config)
         {
             InitializeComponent();
-            _originalFilePath = filePath;
-            LoadConfiguration();
-        }
 
-        // Load JSON into the UI
-        private void LoadConfiguration()
-        {
-            try
-            {
-                _config = JsonLoader.LoadFromFile<ConfigModel>(_originalFilePath);
-                LanguageTextBox.Text = _config.Language;
-                CompileTextBox.Text = _config.Compile;
-                RunTextBox.Text = _config.Run;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Failed to load configuration: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                Close();
-            }
-        }
+            configsDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
+            Directory.CreateDirectory(configsDir);
 
-        // Save changes back to the same file (or rename on language change)
+            originalPath = Path.Combine(configsDir, $"{config.Language}.json");
+
+            Config = config;
+            LanguageTextBox.Text = Config.Language;
+            CompileTextBox.Text = Config.Compile;
+            RunTextBox.Text = Config.Run;
+        }
         private void SaveConfigurationButton_Click(object sender, RoutedEventArgs e)
         {
-            string newLanguage = LanguageTextBox.Text.Trim();
-            string newCompile = CompileTextBox.Text.Trim();
-            string newRun = RunTextBox.Text.Trim();
-
-            if (string.IsNullOrEmpty(newLanguage))
+            if (string.IsNullOrEmpty(LanguageTextBox.Text) || string.IsNullOrEmpty(RunTextBox.Text))
             {
-                MessageBox.Show("Configuration name cannot be empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Name or Run Command can't be empty");
                 return;
             }
 
-            string configFolder = Path.GetDirectoryName(_originalFilePath);
-            string newFileName = Path.Combine(configFolder, newLanguage + ".json");
+            Config.Language = LanguageTextBox.Text;
+            Config.Compile = CompileTextBox.Text;
+            Config.Run = RunTextBox.Text;
 
-            var newConfig = new ConfigModel
+            fileName = $"{Config.Language}.json";
+            fullPath = Path.Combine(configsDir, fileName);
+
+            JsonLoader.SaveToFile(Config, fullPath);
+
+            if (!string.Equals(originalPath, fullPath, StringComparison.OrdinalIgnoreCase) && File.Exists(originalPath))
             {
-                Language = newLanguage,
-                Compile = newCompile,
-                Run = newRun
-            };
-
-            try
-            {
-                JsonLoader.SaveToFile(newConfig, newFileName);
-
-                if (!string.Equals(_originalFilePath, newFileName, StringComparison.OrdinalIgnoreCase))
+                try
                 {
-                    File.Delete(_originalFilePath);
+                    File.Delete(originalPath);
                 }
-
-                MessageBox.Show("Configuration updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                DialogResult = true;
-                Close();
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Warning: could not delete old file:\n{ex.Message}",
+                                    "Cleanup Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred while saving the configuration: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        // Static helper to launch editor from MainWindow with selected FileInfo
-        public static bool? LaunchFor(FileInfo selectedFile)
-        {
-            if (selectedFile == null)
-            {
-                MessageBox.Show("Please select a configuration file to edit.", "No File Selected", MessageBoxButton.OK, MessageBoxImage.Information);
-                return false;
-            }
-
-            var editWin = new EditConfigurationWindow(selectedFile.FullName);
-            return editWin.ShowDialog();
+            this.DialogResult = true;
         }
     }
 }

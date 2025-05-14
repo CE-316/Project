@@ -1,5 +1,0 @@
-{
-  "language": "Java",
-  "compile": "mcs -out:{{exe}} {{source}}",
-  "run": "mono {{exe}}"
-}
