@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="Integrated Assignment Environment" Height="600" Width="1200">
+        Title="Integrated Assignment Environment" Height="600" Width="1200"
+        Background="#101010"
+        >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
@@ -23,12 +25,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" TextAlignment="Center" Padding="10,25"/>
-        <TextBlock Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
-        <TextBox x:Name="ConfigurationSearchBox"
+        <TextBlock Foreground="White" Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" TextAlignment="Center" Padding="10,25"/>
+        <TextBlock Foreground="White" Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
+        <TextBox Foreground="White" x:Name="ConfigurationSearchBox"
              Grid.Row="3"
              Grid.Column="1"
-             FontSize="20"
              Width="350"
              TextChanged="ConfigurationSearchBox_TextChanged"/>
         <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
@@ -50,7 +51,7 @@
                     />
         </StackPanel>
 
-        <ListBox x:Name="ConfigurationListBox"
+        <ListBox Background="#252525" x:Name="ConfigurationListBox"
          Grid.Row="4" Grid.Column="1"
          Height="200" Width="350"
          Margin="0,10,0,10"
@@ -58,7 +59,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,2">
-                        <TextBlock Text="{Binding Language}" VerticalAlignment="Center" Width="240"/>
+                        <TextBlock Foreground="White" Text="{Binding Language}" VerticalAlignment="Center" Width="220"/>
                         <Button x:Name="EditConfigurationButton" Content="Edit"
                             Click="EditConfigurationButton_Click"
                             Tag="{Binding}"
@@ -76,11 +77,10 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <TextBlock Text="Projects" Grid.Row="2" Grid.Column="3" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
-        <TextBox x:Name="ProjectSearchBox"
+        <TextBlock Foreground="White" Text="Projects" Grid.Row="2" Grid.Column="3" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
+        <TextBox Foreground="White" x:Name="ProjectSearchBox"
              Grid.Row="3"
              Grid.Column="3"
-             FontSize="20"
              Width="350"
              TextChanged="ProjectSearchBox_TextChanged"/>
         <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
@@ -91,7 +91,7 @@
                 Width="160"
                 Height="40"/>
         </StackPanel>
-        <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible"
+        <ListBox Background="#252525" ScrollViewer.VerticalScrollBarVisibility="Visible"
              Margin="0,10,0,10"
              x:Name="ProjectListBox"
              Grid.Row="4"
@@ -101,7 +101,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,2">
-                        <TextBlock Text="{Binding Name}" VerticalAlignment="Center" Width="210"/>
+                        <TextBlock Foreground="White" Text="{Binding Name}" VerticalAlignment="Center" Width="175"/>
                         <Button Content="Open"
                             Click="OpenProjectButton_Click"
                             Tag="{Binding}"/>

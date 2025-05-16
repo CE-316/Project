@@ -77,7 +77,7 @@ namespace IntegratedAssignmentSoftware {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/IntegratedAssignmentSoftware;component/addprojectwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/IntegratedAssignmentSoftware;V1.0.0.0;component/addprojectwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddProjectWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

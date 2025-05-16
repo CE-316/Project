@@ -140,7 +140,6 @@
                      TextWrapping="NoWrap"
                      VerticalScrollBarVisibility="Auto"
                      HorizontalScrollBarVisibility="Auto"
-                     Background="WhiteSmoke"
                      Margin="5"/>
             </Grid>
         </DockPanel>

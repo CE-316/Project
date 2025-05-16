@@ -44,7 +44,10 @@
                 Increment="1"
                 Width="100"
                 PreviewTextInput="PointsUpDown_PreviewTextInput"
-                DataObject.Pasting="PointsUpDown_Pasting"        
+                DataObject.Pasting="PointsUpDown_Pasting"   
+                Background="#191919"
+                Foreground="White"
+                BorderBrush="#252525"
                 />
     </Grid>
 </Window>

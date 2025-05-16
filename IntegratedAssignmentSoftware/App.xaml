@@ -4,5 +4,179 @@
              xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#252525"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#333333"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                            x:Name="Border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="4"
+                            Padding="5,2">
+
+                            <TextBlock
+                                Text="{TemplateBinding Content}"
+                                FontWeight="DemiBold"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#414141"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#494949"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#585858"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#676767"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#191919"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+
+                        <Border
+                              x:Name="Bd"
+                              Background="{TemplateBinding Background}"
+                              BorderBrush="{TemplateBinding BorderBrush}"
+                              BorderThickness="{TemplateBinding BorderThickness}"
+                              Padding="{TemplateBinding Padding}"
+                              CornerRadius="2">
+                            <ScrollViewer
+                                x:Name="PART_ContentHost"
+                                Margin="0"
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="white"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="RichTextBox">
+            <Setter Property="Background" Value="#191919"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Padding" Value="2"></Setter>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RichTextBox">
+
+                        <Border
+                  x:Name="Bd"
+                  Background="{TemplateBinding Background}"
+                  BorderBrush="{TemplateBinding BorderBrush}"
+                  BorderThickness="{TemplateBinding BorderThickness}"
+                  Padding="{TemplateBinding Padding}"
+                  CornerRadius="2">
+                            <ScrollViewer
+                    x:Name="PART_ContentHost"
+                    Margin="0"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Stretch"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="white"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="Background" Value="#191919"></Setter>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility"
+              Value="Auto" />
+                <Setter Property="ScrollViewer.VerticalScrollBarVisibility"
+              Value="Auto" />
+            <Setter Property="ScrollViewer.CanContentScroll"
+              Value="true" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border x:Name="ListBoxBorder"
+                                Background="#191919"
+                                BorderBrush="#252525"
+                                BorderThickness="2"
+                                CornerRadius="4">
+                            <ScrollViewer Focusable="False">
+                                <StackPanel IsItemsHost="True"></StackPanel>
+                            </ScrollViewer>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border x:Name="ListItemBorder"
+                                Padding="5"
+                                BorderThickness="2">
+                            <ContentPresenter />
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ListItemBorder"
+                                        Property="Background"
+                                        Value="#252525"></Setter>
+                                <Setter TargetName="ListItemBorder" Property="BorderBrush" Value="#333333">
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter TargetName="ListItemBorder" Property="Background" Value="#333333"></Setter>
+                                <Setter TargetName="ListItemBorder" Property="BorderBrush" Value="#414141"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="#191919"></Setter>
+            <Setter Property="BorderBrush" Value="#252525"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="Padding" Value="5"></Setter>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border>
+                            <Grid>
+                                <ContentPresenter></ContentPresenter>
+                                <ToggleButton></ToggleButton>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
