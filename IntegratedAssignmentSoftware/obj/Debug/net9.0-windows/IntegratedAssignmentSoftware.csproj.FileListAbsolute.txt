@@ -110,3 +110,7 @@ C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\ne
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\MaterialDesignThemes.Wpf.dll
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Microsoft.Xaml.Behaviors.dll
 C:\Users\ASUS\Documents\GitHub\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\App.baml
+C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\MaterialDesignColors.dll
+C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\bin\Debug\net9.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\App.baml
