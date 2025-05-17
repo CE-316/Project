@@ -11,40 +11,56 @@
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\addprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:jsonloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\templatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:templatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editconfigurationwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:projectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Eren \u015EAH\u0130N\\AppData\\Local\\SourceServer\\42479838e592c880187892d2cd4bc6f70effa0965c20b2c82a49c163126e13ff\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -70,18 +86,6 @@
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:editprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\templatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:templatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:services\\compilerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -92,10 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\addtestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addtestcasewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|solutionrelative:addprojectwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8926303F-8F34-4358-9525-FBF3E043D42E}|IntegratedAssignmentSoftware.csproj|c:\\users\\eren \u015Fah\u0130n\\desktop\\project\\integratedassignmentsoftware\\testcasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,17 +109,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "ProjectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "ProjectWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml.cs",
               "RelativeToolTip": "ProjectWindow.xaml.cs",
-              "ViewState": "AgIAADgBAAAAAAAAAAAmwEEBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAhwBkBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T09:01:11.198Z",
               "IsPinned": true,
@@ -127,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ProjectWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectWindow.xaml",
               "RelativeDocumentMoniker": "ProjectWindow.xaml",
@@ -180,7 +180,94 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddConfigurationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AddConfigurationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs*",
+              "RelativeToolTip": "AddConfigurationWindow.xaml.cs*",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwFEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T08:34:10.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditConfigurationWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
+              "RelativeDocumentMoniker": "EditConfigurationWindow.xaml",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
+              "RelativeToolTip": "EditConfigurationWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T20:08:26.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompilerService.cs",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
+              "RelativeDocumentMoniker": "Services\\CompilerService.cs",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
+              "RelativeToolTip": "Services\\CompilerService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T05:44:27.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddProjectWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
+              "RelativeDocumentMoniker": "AddProjectWindow.xaml",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
+              "RelativeToolTip": "AddProjectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T20:07:26.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AddProjectWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AddProjectWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
+              "RelativeToolTip": "AddProjectWindow.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAtwDcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T07:49:39.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditProjectWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
+              "RelativeDocumentMoniker": "EditProjectWindow.xaml",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
+              "RelativeToolTip": "EditProjectWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T20:08:01.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-07T08:49:26.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "JsonLoader.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\JsonLoader.cs",
               "RelativeDocumentMoniker": "JsonLoader.cs",
@@ -193,46 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddConfigurationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AddConfigurationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddConfigurationWindow.xaml.cs*",
-              "RelativeToolTip": "AddConfigurationWindow.xaml.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAIA2wBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T08:34:10.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditConfigurationWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
-              "RelativeDocumentMoniker": "EditConfigurationWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
-              "RelativeToolTip": "EditConfigurationWindow.xaml.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T14:25:39.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProjectModel.cs",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
-              "RelativeDocumentMoniker": "ProjectModel.cs",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
-              "RelativeToolTip": "ProjectModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:25:57.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -245,44 +293,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EditConfigurationWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
-              "RelativeDocumentMoniker": "EditConfigurationWindow.xaml",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml",
-              "RelativeToolTip": "EditConfigurationWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T20:08:26.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T08:49:26.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AddProjectWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AddProjectWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml.cs",
-              "RelativeToolTip": "AddProjectWindow.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAtwDEAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "TemplateHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\TemplateHelper.cs",
+              "RelativeDocumentMoniker": "TemplateHelper.cs",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\TemplateHelper.cs",
+              "RelativeToolTip": "TemplateHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T07:49:39.427Z",
+              "WhenOpened": "2025-05-10T05:21:37.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
+              "Title": "EditConfigurationWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
+              "RelativeDocumentMoniker": "EditConfigurationWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditConfigurationWindow.xaml.cs",
+              "RelativeToolTip": "EditConfigurationWindow.xaml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T14:25:39.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectModel.cs",
+              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
+              "RelativeDocumentMoniker": "ProjectModel.cs",
+              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ProjectModel.cs",
+              "RelativeToolTip": "ProjectModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T21:25:57.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\AppData\\Local\\SourceServer\\42479838e592c880187892d2cd4bc6f70effa0965c20b2c82a49c163126e13ff\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\42479838e592c880187892d2cd4bc6f70effa0965c20b2c82a49c163126e13ff\\IntegratedAssignmentSoftware\\MainWindow.xaml.cs",
@@ -295,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "TestCaseResult.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\TestCaseResult.cs",
               "RelativeDocumentMoniker": "TestCaseResult.cs",
@@ -307,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "EditTestCaseWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditTestCaseWindow.xaml.cs",
               "RelativeDocumentMoniker": "EditTestCaseWindow.xaml.cs",
@@ -320,30 +370,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "EditTestCaseWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditTestCaseWindow.xaml",
               "RelativeDocumentMoniker": "EditTestCaseWindow.xaml",
               "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditTestCaseWindow.xaml",
               "RelativeToolTip": "EditTestCaseWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-09T08:51:17.068Z"
+              "WhenOpened": "2025-05-09T08:51:17.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TemplateHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\TemplateHelper.cs",
-              "RelativeDocumentMoniker": "TemplateHelper.cs",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\TemplateHelper.cs",
-              "RelativeToolTip": "TemplateHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T05:21:37.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "SubmissionViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\SubmissionViewModel.cs",
               "RelativeDocumentMoniker": "SubmissionViewModel.cs",
@@ -355,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "EditProjectWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml.cs",
               "RelativeDocumentMoniker": "EditProjectWindow.xaml.cs",
@@ -367,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "AddTestCaseWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddTestCaseWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddTestCaseWindow.xaml.cs",
@@ -379,48 +418,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "AddTestCaseWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddTestCaseWindow.xaml",
               "RelativeDocumentMoniker": "AddTestCaseWindow.xaml",
               "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddTestCaseWindow.xaml",
               "RelativeToolTip": "AddTestCaseWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-07T10:39:48.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EditProjectWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
-              "RelativeDocumentMoniker": "EditProjectWindow.xaml",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\EditProjectWindow.xaml",
-              "RelativeToolTip": "EditProjectWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T20:08:01.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CompilerService.cs",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
-              "RelativeDocumentMoniker": "Services\\CompilerService.cs",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\Services\\CompilerService.cs",
-              "RelativeToolTip": "Services\\CompilerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T05:44:27.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AddProjectWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
-              "RelativeDocumentMoniker": "AddProjectWindow.xaml",
-              "ToolTip": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\AddProjectWindow.xaml",
-              "RelativeToolTip": "AddProjectWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T20:07:26.405Z"
+              "WhenOpened": "2025-05-07T10:39:48.101Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -436,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ConfigModel.cs",
               "DocumentMoniker": "C:\\Users\\Eren \u015EAH\u0130N\\Desktop\\Project\\IntegratedAssignmentSoftware\\ConfigModel.cs",
               "RelativeDocumentMoniker": "ConfigModel.cs",

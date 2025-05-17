@@ -28,10 +28,16 @@ namespace IntegratedAssignmentSoftware
             return result == true ? openFileDialog.FileName : null;
         }
 
-            private void TestCompileJava_Click(object sender, RoutedEventArgs e)
+        public string javacPath;
+
+        bool isjava = false;
+        bool iscpp = false;
+        bool ispython = false;
+            private void GetJDK(object sender, RoutedEventArgs e)
         {
+            isjava = true;
           
-            string javacPath = SelectFile("Select javac.exe", "Java Compiler (javac.exe)|javac.exe", @"C:\Program Files\Java");
+            javacPath = SelectFile("Select javac.exe", "Java Compiler (javac.exe)|javac.exe", @"C:\Program Files\Java");
             if (javacPath != null)
             {
                 MessageBox.Show("Selected path: " + javacPath);
@@ -40,32 +46,20 @@ namespace IntegratedAssignmentSoftware
             {
                 MessageBox.Show("No file selected.");
             }
-
-            string javaFilePath = SelectFile("select file to be compiled", "Java Files (*.java)|*.java", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
-            if (javaFilePath != null)
-            {
-                MessageBox.Show("Selected path: " + javaFilePath);
-            }
-            else
-            {
-                MessageBox.Show("No file selected.");
-            }
-
-            string className = System.IO.Path.GetFileNameWithoutExtension(javaFilePath);
-            string workingDirectory = System.IO.Path.GetDirectoryName(javaFilePath);
-
-            bool success = CompilerService.CompileJava(javaFilePath, javacPath, out string errors);
-
-            if (success)
-            {
-                string output = CompilerService.RunJava(workingDirectory, className);
-                MessageBox.Show("Java Output:\n" + output);
-            }
-            else
-            {
-                MessageBox.Show("Java Compilation Fail:\n" + errors);
-            }
         }
+            private void GetPython(object sender, RoutedEventArgs e)
+        {
+            ispython = true;
+            //TODO: PYTHON PATHİ SEÇİLECEK
+
+        }
+
+            private void GetCpp(object sender, RoutedEventArgs e)
+        {
+            iscpp = true;
+            //TODO: CPP PATHİ SEÇİLECEK
+        }
+
         
         
 
@@ -74,6 +68,7 @@ namespace IntegratedAssignmentSoftware
             string language = LanguageTextBox.Text.Trim();
             string compileCommand = CompileTextBox.Text.Trim();
             string runCommand = RunTextBox.Text.Trim();
+            string compilerPath = javacPath;
 
             if (string.IsNullOrEmpty(language))
             {
@@ -85,7 +80,8 @@ namespace IntegratedAssignmentSoftware
             {
                 Language = language,
                 Compile = compileCommand,
-                Run = runCommand
+                Run = runCommand,
+                //TODO: Path seçilecekh hangisini seçmek istediğini isjava ispython veya iscpp kullanarak anlayabilirsin 
             };
 
             string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
