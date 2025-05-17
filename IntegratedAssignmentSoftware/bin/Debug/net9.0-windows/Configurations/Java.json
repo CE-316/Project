@@ -1,0 +1,6 @@
+{
+  "language": "Java",
+  "compile": "javac Main.java",
+  "run": "java Main",
+  "path": "C:\\Program Files\\Java\\jdk-20\\bin\\javac.exe"
+}
