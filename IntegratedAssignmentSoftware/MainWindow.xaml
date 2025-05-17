@@ -59,7 +59,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,2">
-                        <TextBlock Foreground="White" Text="{Binding Language}" VerticalAlignment="Center" Width="220"/>
+                        <TextBlock Foreground="White" Text="{Binding Language}" VerticalAlignment="Center" Width="165"/>
                         <Button x:Name="EditConfigurationButton" Content="Edit"
                             Click="EditConfigurationButton_Click"
                             Tag="{Binding}"
@@ -72,6 +72,12 @@
                             Margin="5,0,0,0"
                             HorizontalAlignment="Right"    
                             />
+                        <Button x:Name="ExportConfigurationButton" Content="Export"
+                                Click ="ExportConfigurationButton_Click"
+                                Tag="{Binding}"
+                                Margin="5,0,0,0"
+                                HorizontalAlignment="Right"
+                                ></Button>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

@@ -215,5 +215,28 @@ namespace IntegratedAssignmentSoftware
                 MessageBox.Show("Could not import configuration from file");
             }
         }
+
+        private void ExportConfigurationButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && button.Tag is ConfigModel config)
+            {
+                var dlg = new OpenFolderDialog();
+                if (dlg.ShowDialog() != true)
+                {
+                    return;
+                }
+                var selectedPath = Path.Combine(dlg.FolderName, $"{config.Language}.json");
+                string copyPath = Path.Combine(configDir, $"{config.Language}.json");
+                try
+                {
+                    File.Copy(copyPath, selectedPath, true);
+                    MessageBox.Show("Exported configuration successfully");
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Could not export configuration");
+                }
+            }
+        }
     }
 }
