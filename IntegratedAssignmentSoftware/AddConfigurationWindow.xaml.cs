@@ -81,7 +81,7 @@ namespace IntegratedAssignmentSoftware
                 Language = language,
                 Compile = compileCommand,
                 Run = runCommand,
-                //TODO: Path seçilecekh hangisini seçmek istediğini isjava ispython veya iscpp kullanarak anlayabilirsin 
+                Path = compilerPath
             };
 
             string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");

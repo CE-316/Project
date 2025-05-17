@@ -361,9 +361,75 @@ namespace IntegratedAssignmentSoftware
 
         private void RunButton_Click(object sender, RoutedEventArgs e)
         {
-            Submissions.Clear();
-            LoadSubmissions(Path.Combine(Project.SubmissionsDirectory, "Extracted"));
+            try
+            {
+                if (Project.Configuration == null)
+                {
+                    MessageBox.Show("No configuration selected.");
+                    return;
+                }
+
+                string language = Project.Configuration.Language;
+                string compilerPath = Project.Configuration.Path;
+                string compileArgs = Project.Configuration.Compile ?? "";
+                string runArgs = Project.Configuration.Run ?? "";
+                string submissionDir = Project.SubmissionsDirectory;
+
+                if (string.IsNullOrWhiteSpace(submissionDir) || !Directory.Exists(submissionDir))
+                {
+                    MessageBox.Show("Submission directory is not valid.");
+                    return;
+                }
+
+                // Load all files in that folder
+                string fileToRun = null;
+                if (language == "Java")
+                {
+                    fileToRun = Directory.GetFiles(submissionDir, "*.java").FirstOrDefault();
+                    if (fileToRun == null) throw new FileNotFoundException("No Java file found.");
+                    MessageBox.Show(fileToRun);
+                    bool compiled = CompilerService.CompileJava(fileToRun, compilerPath, out string errors);
+                    MessageBox.Show($"vv");
+                    if (!compiled) throw new Exception($"Java compilation failed:\n{errors}");
+                    MessageBox.Show($"cc");
+
+                    string className = Path.GetFileNameWithoutExtension(fileToRun);
+                    MessageBox.Show($"dd");
+                    string output = CompilerService.RunJava(submissionDir, className, runArgs);
+                    MessageBox.Show($"Java Output:\n{output}");
+                }
+                else if (language == "Python")
+                {
+                    fileToRun = Directory.GetFiles(submissionDir, "*.py").FirstOrDefault();
+                    if (fileToRun == null) throw new FileNotFoundException("No Python script found.");
+
+                    string output = CompilerService.RunPython(compilerPath, fileToRun, runArgs);
+                    MessageBox.Show($"Python Output:\n{output}");
+                }
+                else if (language == "C++")
+                {
+                    fileToRun = Directory.GetFiles(submissionDir, "*.cpp").FirstOrDefault();
+                    if (fileToRun == null) throw new FileNotFoundException("No C++ file found.");
+
+                    string exePath = Path.Combine(submissionDir, "main.exe");
+                    bool compiled = CompilerService.CompileCpp(fileToRun, exePath, compilerPath, out string errors);
+                    if (!compiled) throw new Exception($"C++ compilation failed:\n{errors}");
+
+                    string output = CompilerService.RunCpp(exePath, runArgs);
+                    MessageBox.Show($"C++ Output:\n{output}");
+                }
+                else
+                {
+                    MessageBox.Show($"Unsupported language: {language}");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error:\n{ex.Message}");
+            }
         }
+
+
 
         private void SubmissionsList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

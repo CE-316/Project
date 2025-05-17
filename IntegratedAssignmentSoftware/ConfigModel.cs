@@ -19,5 +19,8 @@ namespace IntegratedAssignmentSoftware
 
         [JsonPropertyName("run")]
         public string Run { get; set; }
+
+        [JsonPropertyName("path")]
+        public string Path { get; internal set; }
     }
 }
