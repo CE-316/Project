@@ -260,6 +260,11 @@ namespace IntegratedAssignmentSoftware
                 submissionData.Code = submissionViewModel.Code;
                 Project.SavedSubmissionResults.Add(submissionData);
             }
+            projectsDir = Path.Combine(AppContext.BaseDirectory, "Saves");
+            Directory.CreateDirectory(projectsDir);
+            originalPath = Path.Combine(projectsDir, "submission_results.json"); 
+            JsonLoader.SaveToFile(Project.SavedSubmissionResults, originalPath);
+
         }
         string GetRichText(RichTextBox rtb)
         {
