@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="Project Window" MinHeight="850" MinWidth="900" WindowState="Maximized">
+        Title="Project Window" Background="#101010" MinHeight="850" MinWidth="900" WindowState="Maximized">
     <DockPanel>
             <ToolBarTray DockPanel.Dock="Top">
                 <ToolBar>
@@ -33,7 +33,7 @@
                 </Grid.ColumnDefinitions>
                 <TextBox VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5" x:Name="NameTextBox" Text="Project Name"></TextBox>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="3">
-                    <TextBlock HorizontalAlignment="Right" Padding="5" Margin="5" Text="Choose configuration:"></TextBlock>
+                <TextBlock Foreground="White" HorizontalAlignment="Right" Padding="5" Margin="5" Text="Choose configuration:"></TextBlock>
                     <ComboBox x:Name="ConfigurationComboBox"
                           Width="250"
                           Margin="5"
@@ -92,35 +92,74 @@
                     </ListBox>
                 </DockPanel>
 
-                <TabControl MaxHeight="196" Grid.Row="4" Grid.Column="3" x:Name="TestCasesTab"
+                <TabControl Background="#191919" MaxHeight="196" Grid.Row="4" Grid.Column="3" x:Name="TestCasesTab"
                 ItemsSource="{Binding SelectedItem.Results, ElementName=SubmissionsList}"
                 Margin="5">
-                    <TabControl.ItemTemplate>
+
+                <TabControl.ItemContainerStyle>
+                    <Style TargetType="TabItem">
+                        <Setter Property="OverridesDefaultStyle" Value="True"></Setter>
+                        <Setter Property="Background" Value="#191919"/>
+                        <Setter Property="BorderBrush" Value="#252525"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="Padding" Value="5"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="TabItem">
+                                    <Border
+                                        x:Name="TabItemBorder"
+                                        Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}"
+                                        Padding="{TemplateBinding Padding}"
+                                        CornerRadius="2">
+                                        <ContentPresenter
+                                            ContentSource="Header"
+                                            ContentTemplate="{TemplateBinding HeaderTemplate}"
+                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="TabItemBorder" Property="Background"   Value="#252525"/>
+                                            <Setter TargetName="TabItemBorder" Property="BorderBrush"  Value="#333333"/>
+                                        </Trigger>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="TabItemBorder" Property="Background"   Value="#333333"/>
+                                            <Setter TargetName="TabItemBorder" Property="BorderBrush"  Value="#414141"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </TabControl.ItemContainerStyle>
+                <TabControl.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
                                 <Ellipse Fill="{Binding DotColorHex}" Width="12" Height="12" Margin="0,0,8,0"></Ellipse>
-                                <TextBlock Text="{Binding TestCase.Name}" />
+                                <TextBlock Foreground="White" Text="{Binding TestCase.Name}" />
                             </StackPanel>
                         </DataTemplate>
                     </TabControl.ItemTemplate>
 
                     <TabControl.ContentTemplate>
                         <DataTemplate>
-                            <ScrollViewer VerticalScrollBarVisibility="Auto"
-                    HorizontalScrollBarVisibility="Disabled"
-                    Padding="5">
+                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Padding="5">
                                 <StackPanel Margin="5" CanVerticallyScroll="True">
-                                    <TextBlock Text="Input:" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding TestCase.Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
+                                    <TextBlock Foreground="White" Text="Input:" FontWeight="Bold"/>
+                                    <TextBlock Foreground="White" Text="{Binding TestCase.Input}" TextWrapping="Wrap" Margin="0,0,0,8"/>
 
-                                    <TextBlock Text="Expected Output:" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
+                                    <TextBlock Foreground="White" Text="Expected Output:" FontWeight="Bold"/>
+                                    <TextBlock Foreground="White" Text="{Binding TestCase.Output}" TextWrapping="Wrap"/>
 
-                                    <TextBlock Text="Points:" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding TestCase.Points}" TextWrapping="Wrap"/>
+                                    <TextBlock Foreground="White" Text="Points:" FontWeight="Bold"/>
+                                    <TextBlock Foreground="White" Text="{Binding TestCase.Points}" TextWrapping="Wrap"/>
 
-                                    <TextBlock Text="Output:" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding Output}" TextWrapping="Wrap"/>
+                                    <TextBlock Foreground="White" Text="Output:" FontWeight="Bold"/>
+                                    <TextBlock Foreground="White" Text="{Binding Output}" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </ScrollViewer>
                         </DataTemplate>

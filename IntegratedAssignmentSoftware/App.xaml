@@ -156,27 +156,5 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style TargetType="ComboBox">
-            <Setter Property="Background" Value="#191919"></Setter>
-            <Setter Property="BorderBrush" Value="#252525"></Setter>
-            <Setter Property="BorderThickness" Value="2"></Setter>
-            <Setter Property="Padding" Value="5"></Setter>
-            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
-            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
-            <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
-
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate>
-                        <Border>
-                            <Grid>
-                                <ContentPresenter></ContentPresenter>
-                                <ToggleButton></ToggleButton>
-                            </Grid>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </Application.Resources>
 </Application>

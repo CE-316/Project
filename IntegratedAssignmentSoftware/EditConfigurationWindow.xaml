@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="EditConfigurationWindow" Height="400" Width="350">
+        Title="EditConfigurationWindow" Background="#101010" Height="400" Width="350">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"></RowDefinition>
@@ -23,6 +23,7 @@
         Grid.Row="1"
         HorizontalAlignment="Center"
         Margin="10"
+        Foreground="White"
         ></TextBlock>
         <TextBox
         x:Name="LanguageTextBox"
@@ -33,7 +34,8 @@
         Text="Compile Command With Arguments:"
         Grid.Row="3"
         HorizontalAlignment="Center"
-         Margin="10"
+        Margin="10"
+        Foreground="White"
     ></TextBlock>
         <TextBox
         x:Name="CompileTextBox"
@@ -44,7 +46,8 @@
         Text="Run Command With Arguments:"
         Grid.Row="5"
         HorizontalAlignment="Center"
-         Margin="10"
+        Margin="10"
+        Foreground="White"
     ></TextBlock>
         <TextBox
         x:Name="RunTextBox"

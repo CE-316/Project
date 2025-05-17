@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="EditProjectWindow" Height="800" Width="1200">
+        Title="EditProjectWindow" Background="#101010" Height="800" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"></RowDefinition>
@@ -34,6 +34,7 @@
         Grid.Column="1"
         Grid.ColumnSpan="3"
         Margin="10"
+        Foreground="White"
         ></TextBlock>
         <TextBox
         Grid.Column="1"
@@ -49,6 +50,7 @@
         Grid.Row="3"
         HorizontalAlignment="Center"
         Margin="10"
+        Foreground="White"
         ></TextBlock>
         <RichTextBox
         Grid.Column="1"
@@ -59,7 +61,7 @@
         VerticalScrollBarVisibility="Auto"
         Height="200"
         ></RichTextBox>
-        <TextBlock Margin="10" Text="Choose Configuration" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="1"></TextBlock>
+        <TextBlock Foreground="White" Margin="10" Text="Choose Configuration" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="1"></TextBlock>
         <ListBox VerticalAlignment="Top" Grid.RowSpan="2" Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,10,0" x:Name="ConfigurationListBox" Grid.Row="6" Height="200" Width="450">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -70,7 +72,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock Margin="10" Text="Test Cases" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="2"></TextBlock>
+        <TextBlock Foreground="White" Margin="10" Text="Test Cases" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="2"></TextBlock>
         <ListBox SelectionChanged="TestCaseListBox_SelectionChanged" VerticalAlignment="Top" Grid.RowSpan="2" Grid.Column="2" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="10,0,10,0" x:Name="TestCaseListBox" Grid.Row="6" Height="200" Width="450">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -90,7 +92,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock Margin="10" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="3" Text="Preview of the Selected Test Case"></TextBlock>
+        <TextBlock Foreground="White" Margin="10" HorizontalAlignment="Center" Grid.Row="5" Grid.Column="3" Text="Preview of the Selected Test Case"></TextBlock>
         <TextBlock
             x:Name="TestCasePreviewTextBlock"
             Text="Placeholder Test Case&#x0a;Input: 3, 4, 1, 2, 5&#x0a;Output: 1, 2, 3, 4, 5"
@@ -99,6 +101,7 @@
             Grid.Column="3"
             Height="150"
             Margin="10"
+            Foreground="White"
             ></TextBlock>
         <Button x:Name="AddTestCaseButton" Click="AddTestCaseButton_Click"
                 Content="Add Test Case"

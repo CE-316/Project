@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IntegratedAssignmentSoftware"
         mc:Ignorable="d"
-        Title="AddProjectWindow" Height="450" Width="800">
+        Title="AddProjectWindow" Background="#101010" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"></RowDefinition>
@@ -22,6 +22,7 @@
             HorizontalAlignment="Center"
             Grid.Row="1"
             Margin="10"
+            Foreground="White"
             ></TextBlock>
         <TextBox
             x:Name="NameTextBox"
@@ -33,6 +34,7 @@
             Grid.Row="3"
             HorizontalAlignment="Center"
             Margin="10"
+            Foreground="White"
             ></TextBlock>
         <RichTextBox
             x:Name="DescriptionTextBox"
