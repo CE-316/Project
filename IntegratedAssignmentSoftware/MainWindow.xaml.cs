@@ -117,8 +117,7 @@ namespace IntegratedAssignmentSoftware
             {
                 ProjectWindow projectWindow = new ProjectWindow(project);
                 projectWindow.Title = project.Name;
-                projectWindow.Show();
-                this.Close();
+                bool? result = projectWindow.ShowDialog();
             }
         }
         private void EditProjectButton_Click(object sender, RoutedEventArgs e)
