@@ -63,35 +63,5 @@
             VerticalAlignment="Top"
             Padding="10" Height="32" Margin="207,32,0,0" Grid.RowSpan="2" Width="120"
         ></Button>
-
-        <Button
-            x:Name="SelectJava"
-            Click="GetJDK"
-            Content="Java"
-            Grid.Row="8"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Padding="10" Height="32" Margin="10,32,0,0" Width="53" RenderTransformOrigin="9.291,26.391"
-            />
-
-        <Button
-    x:Name="SelectPython"
-    Click="GetPython"
-    Content="Python"
-    Grid.Row="8"
-    HorizontalAlignment="Left"
-    VerticalAlignment="Top"
-    Padding="10" Height="32" Margin="78,32,0,0" Width="53" RenderTransformOrigin="9.291,26.391"
-    />
-
-        <Button
-    x:Name="SelectCpp"
-    Click="GetCpp"
-    Content="C++"
-    Grid.Row="7"
-    HorizontalAlignment="Center"
-    VerticalAlignment="Top"
-    Padding="10" Height="32" Margin="0,32,0,0" Grid.RowSpan="2" Width="54" RenderTransformOrigin="9.291,26.391"
-    ></Button>
     </Grid>
 </Window>

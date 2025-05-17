@@ -1,5 +1,4 @@
-﻿using IntegratedAssignmentSoftware.Services;
-using System;
+﻿using System;
 using System.IO;
 using System.Windows;
 
@@ -26,49 +25,13 @@ namespace IntegratedAssignmentSoftware
 
             bool? result = openFileDialog.ShowDialog();
             return result == true ? openFileDialog.FileName : null;
-        }
-
-        public string javacPath;
-
-        bool isjava = false;
-        bool iscpp = false;
-        bool ispython = false;
-            private void GetJDK(object sender, RoutedEventArgs e)
-        {
-            isjava = true;
-          
-            javacPath = SelectFile("Select javac.exe", "Java Compiler (javac.exe)|javac.exe", @"C:\Program Files\Java");
-            if (javacPath != null)
-            {
-                MessageBox.Show("Selected path: " + javacPath);
-            }
-            else
-            {
-                MessageBox.Show("No file selected.");
-            }
-        }
-            private void GetPython(object sender, RoutedEventArgs e)
-        {
-            ispython = true;
-            //TODO: PYTHON PATHİ SEÇİLECEK
-
-        }
-
-            private void GetCpp(object sender, RoutedEventArgs e)
-        {
-            iscpp = true;
-            //TODO: CPP PATHİ SEÇİLECEK
-        }
-
+        }       
         
-        
-
         private void AddConfigurationButton_Click(object sender, RoutedEventArgs e)
         {
             string language = LanguageTextBox.Text.Trim();
             string compileCommand = CompileTextBox.Text.Trim();
             string runCommand = RunTextBox.Text.Trim();
-            string compilerPath = javacPath;
 
             if (string.IsNullOrEmpty(language))
             {
@@ -81,7 +44,6 @@ namespace IntegratedAssignmentSoftware
                 Language = language,
                 Compile = compileCommand,
                 Run = runCommand,
-                Path = compilerPath
             };
 
             string configDir = Path.Combine(AppContext.BaseDirectory, "Configurations");
