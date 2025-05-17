@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Project Window" Background="#101010" MinHeight="850" MinWidth="900" WindowState="Maximized">
     <DockPanel>
+        <!--
             <ToolBarTray DockPanel.Dock="Top">
                 <ToolBar>
                     <Button Content="New"/>
@@ -15,6 +16,7 @@
                     <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save"/>
                 </ToolBar>
             </ToolBarTray>
+        -->
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="20"></RowDefinition>
