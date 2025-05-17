@@ -369,65 +369,58 @@ namespace IntegratedAssignmentSoftware
                     return;
                 }
 
-                string language = Project.Configuration.Language;
-                string compilerPath = Project.Configuration.Path;
-                string compileArgs = Project.Configuration.Compile ?? "";
-                string runArgs = Project.Configuration.Run ?? "";
-                string submissionDir = Project.SubmissionsDirectory;
-
-                if (string.IsNullOrWhiteSpace(submissionDir) || !Directory.Exists(submissionDir))
+                string submissionRoot = Path.Combine(Project.SubmissionsDirectory, "Extracted");
+                if (!Directory.Exists(submissionRoot))
                 {
-                    MessageBox.Show("Submission directory is not valid.");
+                    MessageBox.Show("No extracted submissions found. Did you extract the ZIPs?");
                     return;
                 }
 
-                // Load all files in that folder
-                string fileToRun = null;
-                if (language == "Java")
-                {
-                    fileToRun = Directory.GetFiles(submissionDir, "*.java").FirstOrDefault();
-                    if (fileToRun == null) throw new FileNotFoundException("No Java file found.");
-                    MessageBox.Show(fileToRun);
-                    bool compiled = CompilerService.CompileJava(fileToRun, compilerPath, out string errors);
-                    MessageBox.Show($"vv");
-                    if (!compiled) throw new Exception($"Java compilation failed:\n{errors}");
-                    MessageBox.Show($"cc");
+                // Clear existing results
+                Submissions.Clear();
 
-                    string className = Path.GetFileNameWithoutExtension(fileToRun);
-                    MessageBox.Show($"dd");
-                    string output = CompilerService.RunJava(submissionDir, className, runArgs);
-                    MessageBox.Show($"Java Output:\n{output}");
-                }
-                else if (language == "Python")
-                {
-                    fileToRun = Directory.GetFiles(submissionDir, "*.py").FirstOrDefault();
-                    if (fileToRun == null) throw new FileNotFoundException("No Python script found.");
+                var testCases = Project.TestCases;
+                int totalTests = testCases.Count;
 
-                    string output = CompilerService.RunPython(compilerPath, fileToRun, runArgs);
-                    MessageBox.Show($"Python Output:\n{output}");
-                }
-                else if (language == "C++")
-                {
-                    fileToRun = Directory.GetFiles(submissionDir, "*.cpp").FirstOrDefault();
-                    if (fileToRun == null) throw new FileNotFoundException("No C++ file found.");
+                var resultsSummary = new StringBuilder();
 
-                    string exePath = Path.Combine(submissionDir, "main.exe");
-                    bool compiled = CompilerService.CompileCpp(fileToRun, exePath, compilerPath, out string errors);
-                    if (!compiled) throw new Exception($"C++ compilation failed:\n{errors}");
-
-                    string output = CompilerService.RunCpp(exePath, runArgs);
-                    MessageBox.Show($"C++ Output:\n{output}");
-                }
-                else
+                foreach (var submissionFolder in Directory.GetDirectories(submissionRoot))
                 {
-                    MessageBox.Show($"Unsupported language: {language}");
+                    string studentName = Path.GetFileName(submissionFolder);
+                    string code = "";
+                    var files = Directory.GetFiles(submissionFolder, "Main.*");
+                    var tempCode = files.FirstOrDefault();
+                    if (tempCode != null)
+                    {
+                        code = File.ReadAllText(tempCode);
+                    }
+
+                    var results = EvaluateSubmission(submissionFolder, testCases);
+
+                    // Add to Submissions (for UI update)
+                    var viewModel = new SubmissionViewModel(studentName, results, code);
+                    Submissions.Add(viewModel);
+
+                    // Summary for message box
+                    resultsSummary.AppendLine($"{studentName}:");
+                    foreach (var res in results)
+                    {
+                        resultsSummary.AppendLine($"  {res.TestCase.Name}: {(res.Passed ? "Passed" : "Failed")}");
+                        resultsSummary.AppendLine($"  Output: {res.Output.Trim()}");
+                    }
+                    resultsSummary.AppendLine(new string('-', 40));
                 }
+
+                MessageBox.Show(resultsSummary.ToString(), "Execution Summary", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error:\n{ex.Message}");
+                MessageBox.Show($"Unexpected error:\n{ex.Message}", "Error");
             }
         }
+
+
+
 
 
 

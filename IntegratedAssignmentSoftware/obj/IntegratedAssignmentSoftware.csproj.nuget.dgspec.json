@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj": {}
+    "C:\\Users\\egeor\\Desktop\\Project-main\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj": {
+    "C:\\Users\\egeor\\Desktop\\Project-main\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+        "projectUniqueName": "C:\\Users\\egeor\\Desktop\\Project-main\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
         "projectName": "IntegratedAssignmentSoftware",
-        "projectPath": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
-        "packagesPath": "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\obj\\",
+        "projectPath": "C:\\Users\\egeor\\Desktop\\Project-main\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+        "packagesPath": "C:\\Users\\egeor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egeor\\Desktop\\Project-main\\IntegratedAssignmentSoftware\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Eren ŞAHİN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\egeor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

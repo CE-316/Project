@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\
+C:\Users\egeor\Desktop\Project-main\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\
 IntegratedAssignmentSoftware
 none
 false
-TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WİNDOWS7_0_OR_GREATER
-C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\App.xaml
+TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\egeor\Desktop\Project-main\IntegratedAssignmentSoftware\App.xaml
 8-182933795
 
 221977737712
-208856213274
+208-1233841764
 AddConfigurationWindow.xaml;AddProjectWindow.xaml;AddTestCaseWindow.xaml;EditConfigurationWindow.xaml;EditProjectWindow.xaml;EditTestCaseWindow.xaml;MainWindow.xaml;ProjectWindow.xaml;
 
 True
