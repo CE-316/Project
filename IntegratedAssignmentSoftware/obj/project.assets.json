@@ -255,23 +255,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\msı\\.nuget\\packages\\": {},
+    "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msı\\OneDrive\\Masaüstü\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+      "projectUniqueName": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
       "projectName": "IntegratedAssignmentSoftware",
-      "projectPath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
-      "packagesPath": "C:\\Users\\msı\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\Project\\IntegratedAssignmentSoftware\\obj\\",
+      "projectPath": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+      "packagesPath": "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\msı\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Eren ŞAHİN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

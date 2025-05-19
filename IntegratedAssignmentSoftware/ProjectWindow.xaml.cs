@@ -262,9 +262,13 @@ namespace IntegratedAssignmentSoftware
             }
             projectsDir = Path.Combine(AppContext.BaseDirectory, "Saves");
             Directory.CreateDirectory(projectsDir);
-            originalPath = Path.Combine(projectsDir, "submission_results.json"); 
-            JsonLoader.SaveToFile(Project.SavedSubmissionResults, originalPath);
 
+
+            string time = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+
+            originalPath = Path.Combine(projectsDir, "submission_results" + time + ".json");
+
+            JsonLoader.SaveToFile(Project.SavedSubmissionResults, originalPath);
         }
         string GetRichText(RichTextBox rtb)
         {
