@@ -128,7 +128,7 @@
             Click="DisplayHelp_Click"
             Content="Help"
             FontSize="15"
-            Margin="22,5,10,124" Grid.Row="2"
+            Margin="10,17,10,135" Grid.Row="2"
 />
 
     </Grid>
