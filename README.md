@@ -1,109 +1,126 @@
-📘 Integrated Assignment Environment (IAE)
-IAE is a Windows desktop application designed to automate the compilation, execution, and evaluation of student programming assignments. Built with .NET and WPF (C#), it offers instructors an easy-to-use environment for managing programming projects, running test cases, and analyzing results in a structured way.
+# 📘 Integrated Assignment Environment (IAE)
 
-![111](https://github.com/user-attachments/assets/3c4fe596-0ae1-4dbc-ac33-5aaa3d72d4f7)
+**IAE** is a Windows desktop application designed to automate the compilation, execution, and evaluation of student programming assignments. Built with **.NET** and **WPF (C#)**, it provides instructors with an intuitive interface for managing assignments, running test cases, and viewing results efficiently.
 
+![IAE Screenshot](https://github.com/user-attachments/assets/3c4fe596-0ae1-4dbc-ac33-5aaa3d72d4f7)
 
+---
 
-🚀 Features
-📂 Project-Based Workflow
-Create individual projects for each assignment and track submissions, configurations, and results together.
+## 🚀 Features
 
-⚙️ Configuration Management
-Define how code should be compiled or interpreted for each language (C, Java, Python, etc.).
-Supports custom compile/run commands.
+### 📂 Project-Based Workflow
+- Create individual projects for each assignment  
+- Manage submissions, configurations, and evaluation results together
 
-📦 ZIP Submission Processing
-Automatically extracts .zip files submitted by students and organizes them by student ID.
+### ⚙️ Configuration Management
+- Define how code should be compiled or interpreted for different languages (C, Java, Python, etc.)  
+- Supports custom compile and run commands
 
-🧪 Test Case Definition
-Add multiple test cases with input and expected output values. Supports text input and file-based testing.
+### 📦 ZIP Submission Processing
+- Automatically extracts `.zip` files submitted by students  
+- Organizes extracted folders based on student IDs
 
-▶️ Compilation & Execution
-Compiles or runs student code based on the selected configuration using system-installed tools (e.g., gcc, python).
+### 🧪 Test Case Definition
+- Add multiple test cases with custom input and expected output  
+- Supports manual entry and file-based testing
 
-🔍 Output Comparison
-Automatically compares the program’s output with expected results and evaluates success or failure.
+### ▶️ Compilation & Execution
+- Executes or compiles student code using system-installed tools (e.g., `gcc`, `python`)  
+- Based on selected configuration
 
-📊 Result Reporting
-Shows student results in a clear list with status indicators (compiled, passed, failed, etc.). Includes error messages and logs.
+### 🔍 Output Comparison
+- Compares student output with expected results automatically  
+- Evaluates success or failure per test case
 
-💾 Local Storage
-Uses SQLite and local .json files to store configuration, project metadata, and results. Works offline.
+### 📊 Result Reporting
+- Displays each student’s result in a clear list  
+- Includes status (compiled, passed, failed), outputs, and error messages
 
-🧭 Simple, Visual Interface
-User-friendly interface developed with WPF, supports configuration and test management with ease.
+### 💾 Local Storage
+- Uses **SQLite** and `.json` files to save configuration, project metadata, and results  
+- Fully offline functionality
 
-🖥️ Installation and Running
- Run via Installer (Recommended)
-1-Download the installer:
-IAE Installer Release (Replace with your GitHub release link)
+### 🧭 Simple, Visual Interface
+- Built with WPF  
+- Clean, responsive, and easy-to-navigate UI
 
-2-Run IAE_Setup.exe and follow the installation wizard.
+---
 
-3-A desktop shortcut will be created.
+## 🖥️ Installation and Running
 
-4-Double-click the shortcut to launch the app.
+### ✅ Run via Installer (Recommended)
 
-Usage
-1. Create a New Project
-Click “+ New Project”
+1. **Download the installer:**  
+   _IAE Installer Release_ *(Replace this with your actual GitHub Releases link)*
 
-Enter project name and assignment description.
+2. **Run** `IAE_Setup.exe` and follow the installation steps.
 
-Select a folder containing .zip student submissions.
+3. A **desktop shortcut** will be created automatically.
 
-Choose a previously saved configuration.
+4. **Double-click** the shortcut to launch the app.
 
-Add test cases with input and expected output.
+---
+
+## 🧪 Usage Guide
+
+### 1️⃣ Create a New Project
+- Click **+ New Project**
+- Enter:
+  - Project name
+  - Assignment description
+  - Submissions folder (ZIPs)
+  - Configuration file
+  - Test inputs and expected outputs
 
 The application will:
+- Extract all `.zip` files  
+- Compile or interpret each submission  
+- Run with input  
+- Compare output  
+- Save and display results
 
-Extract all .zip files
+![Project Creation](https://github.com/user-attachments/assets/d347325e-f888-47a5-a527-669070f70f0e)
 
-Compile or interpret the code
+---
 
-Run the program with the test input
+### 2️⃣ Create or Edit a Configuration
+- Go to **Configurations**
+- Click **+ New** or **Edit**
+- Enter:
+  - Language name (e.g., Java, Python)
+  - Compile command (e.g., `javac`, `gcc`)
+  - Run command (e.g., `java Main`, `python main.py`)
+- Save for future use
 
-Compare the output and save results
+![Configuration Edit](https://github.com/user-attachments/assets/aed86c00-e2b8-4a48-83b6-f59e9995be74)
 
-![222](https://github.com/user-attachments/assets/d347325e-f888-47a5-a527-669070f70f0e)
+---
 
+### 3️⃣ View Results
+- Go to the **Submissions** tab to see:
+  - Student IDs
+  - Compilation status
+  - Test results
+  - Output and error logs
 
-2. Create or Edit Configuration
-Go to “Configurations”
+---
 
-Click “+ New” or “Edit” to define:
+### 4️⃣ File Viewer
+- Explore extracted submission folders and files manually using the built-in file browser
 
-Language name (e.g., Java, Python)
+---
 
-Compile command (e.g., javac, gcc)
+### 5️⃣ Help Menu
+- Click the **Help** button in the top-right to view the in-app user manual
 
-Run command (e.g., java Main, python main.py)
+![Help Menu](https://github.com/user-attachments/assets/02a5f74f-5b12-4cf0-81de-b4fc570a492b)
 
-Save to use it in future projects.
+---
 
-![333](https://github.com/user-attachments/assets/aed86c00-e2b8-4a48-83b6-f59e9995be74)
+## 🛠️ Reporting Issues
 
+If you encounter a bug or want to suggest a new feature, please [open an issue](https://github.com/your-repo/issues) on the GitHub repository.
 
-3. View Results
-Go to “Submissions” tab to see:
+---
 
-Student ID
-
-Compilation status
-
-Test case results
-
-Output and error logs
-
-
-4. File Viewer
-Browse extracted files manually via the integrated file explorer panel.
-
-
-5. Help Menu
-Go to Help buttton to view detailed guidance on using the app.
-
-
-![help](https://github.com/user-attachments/assets/02a5f74f-5b12-4cf0-81de-b4fc570a492b)
+_Developed with 💻 by Team 5 - CE316 Project_
