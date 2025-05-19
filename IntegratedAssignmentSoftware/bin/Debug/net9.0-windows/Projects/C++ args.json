@@ -1,0 +1,20 @@
+{
+  "name": "C\u002B\u002B args",
+  "description": "Prints args (5pts).\r\n",
+  "configuration": {
+    "language": "C\u002B\u002B",
+    "compile": "g\u002B\u002B main.cpp",
+    "run": "a.exe arg1",
+    "path": null
+  },
+  "submissionsDirectory": "",
+  "testCases": [
+    {
+      "name": "Args",
+      "input": " ",
+      "output": "arg1",
+      "points": 5
+    }
+  ],
+  "savedSubmissionResults": []
+}

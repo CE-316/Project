@@ -1,0 +1,20 @@
+{
+  "name": "Python helloworld",
+  "description": "Hello world in python (5 pts).\r\n",
+  "configuration": {
+    "language": "Python",
+    "compile": "",
+    "run": "python Main.py arg1",
+    "path": null
+  },
+  "submissionsDirectory": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\Project\\IntegratedAssignmentSoftware\\bin\\Debug\\net9.0-windows\\Submissions",
+  "testCases": [
+    {
+      "name": "hello world",
+      "input": " ",
+      "output": "Hello World",
+      "points": 5
+    }
+  ],
+  "savedSubmissionResults": []
+}

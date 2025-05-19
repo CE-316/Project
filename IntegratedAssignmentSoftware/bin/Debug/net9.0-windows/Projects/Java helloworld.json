@@ -1,0 +1,20 @@
+{
+  "name": "Java helloworld",
+  "description": "Prints Hello world (5 pts).\r\n",
+  "configuration": {
+    "language": null,
+    "compile": null,
+    "run": null,
+    "path": null
+  },
+  "submissionsDirectory": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\Project\\IntegratedAssignmentSoftware\\bin\\Debug\\net9.0-windows\\Submissions",
+  "testCases": [
+    {
+      "name": "Hello World",
+      "input": " ",
+      "output": "Hello World",
+      "points": 5
+    }
+  ],
+  "savedSubmissionResults": []
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Java args",
+  "description": "Prints args (5 pts).\r\n",
+  "configuration": {
+    "language": "Java",
+    "compile": "javac Main.java",
+    "run": "java Main args",
+    "path": null
+  },
+  "submissionsDirectory": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\Project\\IntegratedAssignmentSoftware\\bin\\Debug\\net9.0-windows\\Submissions",
+  "testCases": [
+    {
+      "name": "args",
+      "input": " ",
+      "output": "args",
+      "points": 5
+    }
+  ],
+  "savedSubmissionResults": []
+}

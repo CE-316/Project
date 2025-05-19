@@ -1,0 +1,20 @@
+{
+  "name": "C\u002B\u002B helloworld",
+  "description": "Prints hello world (5pts).\r\n",
+  "configuration": {
+    "language": "C\u002B\u002B",
+    "compile": "g\u002B\u002B main.cpp",
+    "run": "a.exe arg1",
+    "path": null
+  },
+  "submissionsDirectory": "C:\\Users\\ms\u0131\\OneDrive\\Masa\u00FCst\u00FC\\Project\\IntegratedAssignmentSoftware\\bin\\Debug\\net9.0-windows\\Submissions",
+  "testCases": [
+    {
+      "name": "Hello, World!",
+      "input": " ",
+      "output": "Hello, World!",
+      "points": 5
+    }
+  ],
+  "savedSubmissionResults": []
+}
