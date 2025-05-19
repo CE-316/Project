@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "K4+FcU5gvDQ=",
+  "dgSpecHash": "W9xnTqUFkQg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eren ŞAHİN\\Desktop\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
+  "projectFilePath": "C:\\Users\\msı\\OneDrive\\Masaüstü\\Project\\IntegratedAssignmentSoftware\\IntegratedAssignmentSoftware.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\extended.wpf.toolkit\\4.7.25104.5739\\extended.wpf.toolkit.4.7.25104.5739.nupkg.sha512",
-    "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\materialdesigncolors\\5.2.1\\materialdesigncolors.5.2.1.nupkg.sha512",
-    "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\materialdesignthemes\\5.2.1\\materialdesignthemes.5.2.1.nupkg.sha512",
-    "C:\\Users\\Eren ŞAHİN\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    "C:\\Users\\msı\\.nuget\\packages\\extended.wpf.toolkit\\4.7.25104.5739\\extended.wpf.toolkit.4.7.25104.5739.nupkg.sha512",
+    "C:\\Users\\msı\\.nuget\\packages\\materialdesigncolors\\5.2.1\\materialdesigncolors.5.2.1.nupkg.sha512",
+    "C:\\Users\\msı\\.nuget\\packages\\materialdesignthemes\\5.2.1\\materialdesignthemes.5.2.1.nupkg.sha512",
+    "C:\\Users\\msı\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
   ],
   "logs": []
 }

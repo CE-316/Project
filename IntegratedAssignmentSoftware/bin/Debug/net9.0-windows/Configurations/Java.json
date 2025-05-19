@@ -1,6 +1,6 @@
 {
   "language": "Java",
-  "compile": "javac Main.java argument1",
-  "run": "java Main",
+  "compile": "javac Main.java",
+  "run": "java Main args",
   "path": null
 }
