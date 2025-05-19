@@ -64,7 +64,7 @@
 ## 🧪 Usage Guide
 
 ### 1️⃣ Create a New Project
-- Click **+ New Project**
+- Click **+ Add Project**
 - Enter:
   - Project name
   - Assignment description
