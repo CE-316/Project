@@ -51,6 +51,17 @@ namespace IntegratedAssignmentSoftware
             ConfigurationListBox.ItemsSource = configListView;
         }
 
+        private void DisplayHelp_Click(object sender, RoutedEventArgs e)
+        {
+         
+            HelpWindow helpWindow = new HelpWindow();
+            helpWindow.Title = "Help";
+            helpWindow.ShowDialog();
+        
+
+        }
+
+
         private void LoadProjectFiles()
         {
             if (!Directory.Exists(projectDir))

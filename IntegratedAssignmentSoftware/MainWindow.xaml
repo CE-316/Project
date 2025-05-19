@@ -8,31 +8,31 @@
         Title="Integrated Assignment Environment" Height="600" Width="1200"
         Background="#101010"
         >
-    <Grid>
+    <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="307.5"/>
+            <ColumnDefinition Width="42.5"/>
             <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto" MinHeight="169.916"/>
+            <RowDefinition Height="auto" MinHeight="37.95"/>
+            <RowDefinition Height="auto" MinHeight="176"/>
+            <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBlock Foreground="White" Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="30" TextAlignment="Center" Padding="10,25"/>
-        <TextBlock Foreground="White" Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
+        <TextBlock Foreground="White" Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="30" TextAlignment="Center" Padding="10,25" Margin="0,0,0,90" Grid.RowSpan="2"/>
+        <TextBlock Foreground="White" Text="Configurations" Grid.Row="2" Grid.Column="1" FontSize="30" HorizontalAlignment="Center" Padding="10,25" Margin="0,42,0,30" Grid.RowSpan="2" Width="214"/>
         <TextBox Foreground="White" x:Name="ConfigurationSearchBox"
              Grid.Row="3"
              Grid.Column="1"
-             Width="350"
-             TextChanged="ConfigurationSearchBox_TextChanged"/>
-        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+             TextChanged="ConfigurationSearchBox_TextChanged" Margin="0,0,0,8"/>
+        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10" Width="340">
             <Button x:Name="AddConfigurationButton"
                     Click="AddConfigurationButton_Click"
                     Content="Add Configuration"
@@ -46,15 +46,15 @@
                     Content="Import Configuration"
                     FontSize="15"
                     Width="160"
-                    Height="40"
-                    Margin="5"
+                    Height="40" RenderTransformOrigin="-0.056,-0.978"
                     />
+
         </StackPanel>
 
+        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10" RenderTransformOrigin="0.814,0.636" Width="0"/>
         <ListBox Background="#252525" x:Name="ConfigurationListBox"
          Grid.Row="4" Grid.Column="1"
-         Height="200" Width="350"
-         Margin="0,10,0,10"
+         Margin="0,23,0,23"
          ScrollViewer.VerticalScrollBarVisibility="Visible">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -83,13 +83,12 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <TextBlock Foreground="White" Text="Projects" Grid.Row="2" Grid.Column="3" FontSize="30" HorizontalAlignment="Center" Padding="10,25"/>
+        <TextBlock Foreground="White" Text="Projects" Grid.Row="2" Grid.Column="3" FontSize="30" HorizontalAlignment="Left" Padding="10,25" Margin="113,42,0,30" Grid.RowSpan="2" Width="125"/>
         <TextBox Foreground="White" x:Name="ProjectSearchBox"
              Grid.Row="3"
              Grid.Column="3"
-             Width="350"
-             TextChanged="ProjectSearchBox_TextChanged"/>
-        <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+             TextChanged="ProjectSearchBox_TextChanged" Grid.ColumnSpan="2" Margin="0,0,0,8"/>
+        <StackPanel Grid.Row="5" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="95,10,0,10" Width="160">
             <Button x:Name="AddProjectButton"
                 Click="AddProjectButton_Click"
                 Content="Add Project"
@@ -97,13 +96,14 @@
                 Width="160"
                 Height="40"/>
         </StackPanel>
+
+
+
         <ListBox Background="#252525" ScrollViewer.VerticalScrollBarVisibility="Visible"
-             Margin="0,10,0,10"
+             Margin="0,23,0,23"
              x:Name="ProjectListBox"
              Grid.Row="4"
-             Grid.Column="3"
-             Height="200"
-             Width="350">
+             Grid.Column="3" Grid.ColumnSpan="2">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" Margin="0,2">
@@ -123,5 +123,13 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <TextBlock Foreground="White" Text="Integrated Assignment Environment" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="30" TextAlignment="Center" Padding="10,25" Margin="0,0,0,90" Grid.RowSpan="2"/>
+        <Button x:Name="help_Kopyala"
+            Click="DisplayHelp_Click"
+            Content="Help"
+            FontSize="15"
+            Margin="22,5,10,124" Grid.Row="2"
+/>
+
     </Grid>
 </Window>

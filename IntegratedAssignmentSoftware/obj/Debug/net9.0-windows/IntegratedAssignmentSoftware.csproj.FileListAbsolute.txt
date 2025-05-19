@@ -229,3 +229,5 @@ C:\Users\msı\OneDrive\Masaüstü\IAE-Project\IntegratedAssignmentSoftware\obj\D
 C:\Users\msı\OneDrive\Masaüstü\IAE-Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware.pdb
 C:\Users\msı\OneDrive\Masaüstü\IAE-Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\IntegratedAssignmentSoftware.genruntimeconfig.cache
 C:\Users\msı\OneDrive\Masaüstü\IAE-Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\ref\IntegratedAssignmentSoftware.dll
+C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\HelpWindow.baml
+C:\Users\Eren ŞAHİN\Desktop\Project\IntegratedAssignmentSoftware\obj\Debug\net9.0-windows\HelpWindow.g.cs
