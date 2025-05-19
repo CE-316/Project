@@ -1,0 +1,6 @@
+{
+  "language": "Python",
+  "compile": "",
+  "run": "python Main.py arg1",
+  "path": null
+}

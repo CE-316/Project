@@ -1,0 +1,6 @@
+{
+  "language": "C\u002B\u002B",
+  "compile": "g\u002B\u002B main.cpp",
+  "run": "a.exe arg1",
+  "path": null
+}
